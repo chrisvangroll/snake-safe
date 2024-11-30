@@ -1,0 +1,24 @@
+footer {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container span {
+        display: block; /* Ensure it behaves as a block element for proper margin application */
+        margin-bottom: 12px;
+    }
+}
+
+.fluid-engine-edit {
+    height: auto!important;
+}

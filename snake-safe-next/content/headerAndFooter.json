@@ -1,0 +1,23 @@
+{
+    "english": {
+      "company": "Snake-safe",
+      "motto": "Real Science. Real Safety.",
+      "author": "By Jonny Miller",
+      "links": {
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+      }
+    },
+    "spanish": {
+      "company": "Snake-safe",
+      "motto": "Ciencia real. Seguridad real.",
+      "author": "por Jonny Miller",
+      "links": {
+        "about": "Nosotros",
+        "services": "Servicios",
+        "contact": "Contacto"
+      }
+    }
+  }
+  
