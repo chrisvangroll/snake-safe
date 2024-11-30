@@ -2,12 +2,18 @@
 import { useEffect, useState } from "react";
 import Header from "../src/app/components/header/Header";
 import Content from "../content/home.json";
+import { useSelector } from 'react-redux';
 import '../src/styles/styles.css';
 
 
 export default function Home() {
   const { english, spanish } = Content;
+  const language = useSelector((state) => state.language.language);
   const [lang, setLang] = useState(english);
+
+  useEffect(()=>{
+    language === "en"? setLang(english) : setLang(spanish)
+  }, [language])
 
   useEffect(() => {
     const burgerButton = document.querySelector(".header-burger-btn");
