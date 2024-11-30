@@ -1,0 +1,169 @@
+{
+    "english": {
+      "heading_1": "Protecting your staff and guests",
+      "heading_2": "Assessment and training in snake risk management, removal, and first aid",
+      "author": "By Biologist and Biomedical Scientist Dr. Jonny Miller",
+      "hero_img": "snake.jpg",
+      "facts": [
+        "Fact: The incidence of snakebites is increasing in Central America",
+        "Fact: Litigation can cost companies millions of dollars and insurance premiums",
+        "Fact: The most common beliefs about how to treat snakebites INCREASE the risk of injury and death",
+        "Fact: Attacking snakes can increase the chances of injury and death to humans"
+      ],
+      "subtext": "We are committed to reducing the risk of death and injury to staff and guests by helping companies minimize the risk of snake bites using a humane and evidence-based approach. With our combined experience in the ecological and medical sciences and risk management, we have designed assessment and training programs in land management, snake removal, and first aid, to effectively reduce the presence of snakes, reduce the risk of attack, and reduce the chances of injury and death if snakebite does occur",
+      "cards": [
+        {
+          "title": "Schools",
+          "img": "portrait-of-happy-children-with-arms-around-sittin-2023-11-27-05-14-34-utc.jpg"
+        },
+        {
+          "title": "Resorts",
+          "img": "young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg"
+        },
+        {
+          "title": "First Responders",
+          "img": "medicine-doctor-team-2023-11-27-05-35-55-utc.jpg"
+        },
+        {
+          "title": "Construction",
+          "img": "building-engineers-walking-along-construction-site-2023-11-27-04-59-02-utc.jpg"
+        },
+        {
+          "title": "Golf Courses",
+          "img": "instructor-teaching-golf-to-two-children-in-a-cour-2024-09-05-19-59-47-utc.png"
+        },
+        {
+          "title": "Agriculture",
+          "img": "DSC_0432-2.png"
+        }
+      ],
+      "service_heading": "Our Services",
+      "service_cards": [
+        {
+          "service": "Risk Assessment",
+          "img": "Map+images.pptx.jpg",
+          "bullets": [
+            "Identification of locations and practices that support snake entry, refuge, hunting and reproduction.",
+            "Tailor-made, site-specific action plan to reduce snake presence and bite risk on the property.",
+            "Contingency plan building for snake bite emergencies"
+          ]
+        },
+        {
+          "service": "Land and Emergency Management Training",
+          "img": "IMG_8324.png",
+          "bullets": [
+            "Best practices for reducing snakes hunting and breeding on your property",
+            "Building effective systems for incidence reporting, action plans and emergency management",
+            "Minimizing incidents through information and signage to promote best practices"
+          ]
+        },
+        {
+          "service": "Snake Bite First Aid Training",
+          "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png",
+          "bullets": [
+            "Theory: Understanding snake venom and treatment myths",
+            "Practical: How to administer first aid to a snakebite victim, protocol to get to emergency services"
+          ]
+        },
+        {
+          "service": "Snake Removal and Relocation Training",
+          "img": "jonny_snake.jpg",
+          "bullets": [
+            "Understanding and practicing the tools and techniques to humanely and safely remove and relocate snakes"
+          ]
+        }
+      ],
+      "column_1": {
+        "title": "Prevent the worst…",
+        "img": "a-team-of-surgeons-is-fighting-for-life-for-a-rea-2023-11-27-05-14-27-utc.png"
+      },
+      "column_2": {
+        "title": "By training your best…",
+        "img": "group-photo.png"
+      }
+    },
+    "spanish": {
+      "heading_1": "Protegiendo a su personal e invitados",
+      "heading_2": "Evaluación y capacitación en gestión de riesgos por serpientes, remoción y primeros auxilios",
+      "author": "Por el biólogo y científico biomédico Dr. Jonny Miller",
+      "hero_img": "snake.jpg",
+      "facts": [
+        "Dato: La incidencia de mordeduras de serpientes está aumentando en América Central",
+        "Dato: Los litigios pueden costar a las empresas millones de dólares en primas de seguros",
+        "Dato: Las creencias más comunes sobre cómo tratar mordeduras de serpientes AUMENTAN el riesgo de lesiones y muerte",
+        "Dato: Atacar a las serpientes puede aumentar las posibilidades de lesiones y muerte para los humanos"
+      ],
+      "subtext": "Estamos comprometidos a reducir el riesgo de muerte y lesiones para el personal e invitados, ayudando a las empresas a minimizar el riesgo de mordeduras de serpientes utilizando un enfoque humano y basado en evidencia. Con nuestra experiencia combinada en ciencias ecológicas y médicas, y en gestión de riesgos, hemos diseñado programas de evaluación y capacitación en manejo de tierras, remoción de serpientes y primeros auxilios para reducir efectivamente la presencia de serpientes, disminuir el riesgo de ataque y las posibilidades de lesiones y muerte si ocurre una mordedura de serpiente.",
+      "cards": [
+        {
+          "title": "Escuelas",
+          "img": "portrait-of-happy-children-with-arms-around-sittin-2023-11-27-05-14-34-utc.jpg"
+        },
+        {
+          "title": "Resorts",
+          "img": "young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg"
+        },
+        {
+          "title": "Primeros Respondedores",
+          "img": "medicine-doctor-team-2023-11-27-05-35-55-utc.jpg"
+        },
+        {
+          "title": "Construcción",
+          "img": "building-engineers-walking-along-construction-site-2023-11-27-04-59-02-utc.jpg"
+        },
+        {
+          "title": "Campos de Golf",
+          "img": "instructor-teaching-golf-to-two-children-in-a-cour-2024-09-05-19-59-47-utc.png"
+        },
+        {
+          "title": "Agricultura",
+          "img": "DSC_0432-2.png"
+        }
+      ],
+      "service_heading": "Nuestros Servicios",
+      "service_cards": [
+        {
+          "service": "Evaluación de Riesgos",
+          "img": "Map+images.pptx.jpg",
+          "bullets": [
+            "Identificación de ubicaciones y prácticas que favorecen la entrada, refugio, caza y reproducción de serpientes.",
+            "Plan de acción personalizado y específico para el sitio para reducir la presencia de serpientes y el riesgo de mordeduras en la propiedad.",
+            "Construcción de planes de contingencia para emergencias por mordeduras de serpientes"
+          ]
+        },
+        {
+          "service": "Capacitación en Gestión de Terrenos y Emergencias",
+          "img": "IMG_8324.png",
+          "bullets": [
+            "Mejores prácticas para reducir la caza y reproducción de serpientes en su propiedad",
+            "Construcción de sistemas efectivos para la notificación de incidentes, planes de acción y gestión de emergencias",
+            "Minimizar incidentes mediante información y señalización para promover las mejores prácticas"
+          ]
+        },
+        {
+          "service": "Capacitación en Primeros Auxilios para Mordeduras de Serpientes",
+          "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png",
+          "bullets": [
+            "Teoría: Comprender el veneno de serpientes y los mitos de tratamiento",
+            "Práctico: Cómo administrar primeros auxilios a una víctima de mordedura de serpiente, protocolo para llegar a los servicios de emergencia"
+          ]
+        },
+        {
+          "service": "Capacitación en Remoción y Reubicación de Serpientes",
+          "img": "jonny_snake.jpg",
+          "bullets": [
+            "Comprender y practicar las herramientas y técnicas para remover y reubicar serpientes de manera segura y humanitaria"
+          ]
+        }
+      ],
+      "column_1": {
+        "title": "Prevenga lo peor...",
+        "img": "a-team-of-surgeons-is-fighting-for-life-for-a-rea-2023-11-27-05-14-27-utc.png"
+      },
+      "column_2": {
+        "title": "Entrenando a los mejores...",
+        "img": "group-photo.png"
+      }
+    }
+  }
+  
