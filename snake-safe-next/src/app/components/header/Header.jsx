@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import './header.css';
 
 const Header = () => {
@@ -10,11 +11,11 @@ const Header = () => {
 
   return (
     <header className="header-nav-next">
-      <div className="logo">SNAKE-SAFE. Real Science. Real Safety.</div>
+      <Link href="/" className="logo">SNAKE-SAFE. Real Science. Real Safety.</Link>
       <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <a href="#home">About</a>
-        <a href="#about">Services</a>
-        <a href="#contact">Contact</a>
+        <Link href="/about">About</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
       <div
         className={`hamburger ${menuOpen ? 'open' : ''}`}

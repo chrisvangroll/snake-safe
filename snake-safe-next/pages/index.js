@@ -1,8 +1,6 @@
 "use client"
-import Image from "next/image";
-import styles from "./page.module.css";
 import { useEffect } from "react";
-import Header from "./components/header/Header";
+import Header from "../src/app/components/header/Header";
 
 export default function Home() {
 
@@ -12,12 +10,11 @@ export default function Home() {
     
     if (burgerButton && menu) {
       burgerButton.addEventListener("click", () => {
-        menu.classList.toggle("open"); // Add/remove a class to show/hide the menu
+        menu.classList.toggle("open"); 
       });
     }
   
     return () => {
-      // Clean up the event listener
       if (burgerButton) {
         burgerButton.removeEventListener("click", () => {});
       }
@@ -29,8 +26,6 @@ export default function Home() {
 <>
   <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {/* This is Squarespace. */}
-  {/* sepia-plum-s8c9 */}
   <base href="" />
   <meta charSet="utf-8" />
   <title>SNAKE-SAFE. Real Science. Real Safety.</title>
@@ -73,7 +68,6 @@ export default function Home() {
     type="text/css"
     href="https://static1.squarespace.com/static/versioned-site-css/673652ec7d92b13c5632108e/6/5c5a519771c10ba3470d8101/673652ec7d92b13c563210ae/1588/site.css"
   />
-  {/* End of Squarespace Headers */}
   <link
     rel="stylesheet"
     type="text/css"
