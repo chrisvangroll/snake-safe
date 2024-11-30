@@ -34,11 +34,6 @@
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #007BFF;
-}
-
-/* Desktop styles */
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
