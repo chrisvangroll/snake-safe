@@ -18,3 +18,24 @@
     color: rgb(24, 34, 65);
     background: white;
 }
+
+
+@media (min-width: 768px) {
+    .up-fifty {
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .up-twenty {
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .m-top {
+        margin-top: 48px;
+    }
+}

@@ -2,6 +2,12 @@
   background-color: rgb(123, 148, 156);
   text-align: center;
 }
+@media (max-width: 767px) {
+  .toggle-container {
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+}
 
 .toggle-select {
   font-family: "Manrope", sans-serif;

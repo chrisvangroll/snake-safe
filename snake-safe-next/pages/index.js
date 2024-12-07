@@ -1322,7 +1322,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className="fe-block fe-block-c706cfadb8184a37be5c">
+                      <div className={`fe-block fe-block-c706cfadb8184a37be5c ${language == "es"? "up-fifty": ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1400,7 +1400,8 @@ content-width--wide
                                 <div
                                   className="fluid-image-container sqs-image-content"
                                   style={{
-                                    overflow: "hidden",
+                                    overflow: "hidden", 
+                                    
                                     WebkitMaskImage:
                                       "-webkit-radial-gradient(white, black)",
                                     position: "relative",
@@ -1446,7 +1447,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className="fe-block fe-block-ea40ba0b95f853f5eda2">
+                      <div className={`fe-block fe-block-ea40ba0b95f853f5eda2 ${language == "es"? "up-fifty": ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1472,7 +1473,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className="fe-block fe-block-cc22f5a7e2fc3e4658fd">
+                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "en"? "m-top": ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1695,7 +1696,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className="fe-block fe-block-fa276e37b328d12dfc1a">
+                      <div className={`fe-block fe-block-fa276e37b328d12dfc1a ${language == "es" ? "up-twenty": ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
