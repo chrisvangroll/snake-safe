@@ -1473,7 +1473,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "en"? "m-top-small": ""}`}>
+                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "es"? "m-top-small": ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
