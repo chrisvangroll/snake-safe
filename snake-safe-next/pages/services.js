@@ -234,7 +234,7 @@ content-width--wide
                       </div>
                     </div>
                   </div>
-                  <div className="fe-block fe-block-0a1b74dc899dfc60c365">
+                  <div className={`fe-block fe-block-0a1b74dc899dfc60c365 ${language == "es"? "m-top": ""}`}>
                     <div
                       className="sqs-block html-block sqs-block-html"
                       data-blend-mode="NORMAL"
@@ -380,7 +380,7 @@ content-width--wide
                       </div>
                     </div>
                   </div>
-                  <div className="fe-block fe-block-yui_3_17_2_1_1732851041591_95833">
+                  <div className={`fe-block fe-block-yui_3_17_2_1_1732851041591_95833 ${language == "es"? "m-top": ""}`}>
                     <div
                       className="sqs-block html-block sqs-block-html"
                       data-blend-mode="NORMAL"
@@ -608,7 +608,7 @@ content-width--wide
                       </div>
                     </div>
                   </div>
-                  <div className="fe-block fe-block-90035540e4c8ccc56ffd">
+                  <div className={`fe-block fe-block-90035540e4c8ccc56ffd ${language == "es"? "up-fifty": ""}`}>
                     <div
                       className="sqs-block html-block sqs-block-html"
                       data-blend-mode="NORMAL"

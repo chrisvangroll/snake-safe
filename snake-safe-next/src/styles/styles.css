@@ -38,4 +38,7 @@
     .m-top {
         margin-top: 48px;
     }
+    .m-top-small {
+        margin-top: 24px;
+    }
 }

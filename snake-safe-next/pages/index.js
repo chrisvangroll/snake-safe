@@ -1226,7 +1226,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className="fe-block fe-block-3f8dd36dc1a86d1c28c7">
+                      <div className= {`fe-block fe-block-3f8dd36dc1a86d1c28c7 ${language == "es"? "m-top": ""}  `} >
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1473,7 +1473,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "en"? "m-top": ""}`}>
+                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "en"? "m-top-small": ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
