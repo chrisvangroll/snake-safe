@@ -36,9 +36,15 @@
 
 @media (max-width: 768px){
     .m-top {
-        margin-top: 48px;
+        margin-top: 60px;
     }
     .m-top-small {
-        margin-top: 24px;
+        margin-top:32px;
+    }
+}
+
+@media (max-width: 768px){
+    .active {
+       padding-bottom: 24px;
     }
 }

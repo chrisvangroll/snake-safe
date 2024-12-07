@@ -30,7 +30,7 @@ const Header = () => {
       <Link href="/" className="logo">
       <span style={{textTransform: "uppercase"}}>{lang.company}</span>. <span>{lang.motto}</span>
       </Link>
-      <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+      <nav className={`nav-links  ${menuOpen ? "active" : ""}`}>
         <LanguageToggle />
         <Link className={currentPage("about")} href="/about">
           {lang.links.about}
