@@ -1,7 +1,19 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Header from '@/app/components/header/Header';
+import Content from "../content/about.json";
+import { useSelector } from 'react-redux';
+import Footer from "@/app/components/footer/Footer";
+import '../src/styles/styles.css';
 
 const about = () => {
+  const { english, spanish } = Content;
+  const language = useSelector((state) => state.language.language);
+  const [lang, setLang] = useState(english);
+
+  useEffect(()=>{
+    language === "en"? setLang(english) : setLang(spanish)
+  }, [language])
+
   return (
     <>
   <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -192,7 +204,7 @@ content-width--wide
                         <div className="sqs-html-content">
                           <h1 style={{ whiteSpace: "pre-wrap" }}>
                             <span className="sqsrte-text-color--white">
-                              Who we are
+                              {lang.heading}
                             </span>
                           </h1>
                         </div>
@@ -211,23 +223,7 @@ content-width--wide
                         <div className="sqs-html-content">
                           <p className="" style={{ whiteSpace: "pre-wrap" }}>
                             <strong>
-                              Dr Jonny Miller trained as a Biomedical Scientist
-                              through his BSc in Biomedical Sciences and PhD in
-                              Immunology (University of Manchester, UK), before
-                              turning his research interests towards Ecology and
-                              Genetics in the Neotropics. Through his varied
-                              fieldwork, research in conservation genetics, and
-                              building education programs, Jonny has managed
-                              expeditions to remote environments in Honduras,
-                              Chile, Paraguay and Costa Rica on behalf of
-                              various organizations. Jonny has been responsible
-                              for the welfare of up to 300 scientists,
-                              volunteers and students at a time on expeditions
-                              lasting as long as 3 months. Jonny's key to
-                              success in these endeavours is establishing
-                              rigorous safety training programs as well as solid
-                              protocols and communication for handling extreme
-                              situations effectively.
+                             {lang.text}
                             </strong>
                             &nbsp;&nbsp;&nbsp;
                           </p>
@@ -246,7 +242,7 @@ content-width--wide
                             </strong>
                             &nbsp;&nbsp;
                           </p>
-                          <a href="https://www.youtube.com/user/jonnytropics" className="" style={{color: "rgb(24, 34, 65)"}}>
+                          <a href={lang.link} className="" style={{color: "rgb(24, 34, 65)"}}>
                             &nbsp;https://www.youtube.com/user/jonnytropics
                           </a>
                         </div>
@@ -290,14 +286,12 @@ content-width--wide
                               <div className="content-fill">
                                 <img
                                   data-stretch="true"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png"
                                   data-image-dimensions="2500x1667"
                                   data-image-focal-point="0.5,0.5"
-                                  alt=""
+                                  alt="Man holding snake"
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png"
+                                  src={lang.imageFeatured}
                                   width={2500}
                                   height={1667}
                                   sizes="100vw"
@@ -306,7 +300,6 @@ content-width--wide
                                     objectFit: "cover",
                                     objectPosition: "50% 50%"
                                   }}
-                                  srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/8e16979b-f192-4db5-87b4-655fc961fb9b/DSC_0530.png?format=2500w 2500w"
                                   loading="lazy"
                                   decoding="async"
                                   data-loader="sqs"
@@ -361,14 +354,12 @@ content-width--wide
                               <div className="content-fit">
                                 <img
                                   data-stretch="false"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/53a2c15d-7ffc-4530-891b-fdd0dbe9c97b/DSC_0533.jpg"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/53a2c15d-7ffc-4530-891b-fdd0dbe9c97b/DSC_0533.jpg"
                                   data-image-dimensions="2222x1666"
                                   data-image-focal-point="0.5,0.5"
-                                  alt=""
+                                  alt="Man speaking at the head of a table to a crowd"
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/53a2c15d-7ffc-4530-891b-fdd0dbe9c97b/DSC_0533.jpg"
+                                  src={lang.image-1}
                                   width={2222}
                                   height={1666}
                                   sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 20.833333333333336vw"
@@ -616,265 +607,7 @@ content-width--wide
         </section>
       </article>
     </main>
-    <footer className="sections" id="footer-sections" data-footer-sections="">
-      <section
-        data-test="page-section"
-        data-section-theme="light"
-        className="page-section 
-    
-full-bleed-section
-layout-engine-section
-    
-    background-width--full-bleed
-    
-
-  section-height--custom
-
-    
-    
-content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-
-    
-    
-    light"
-        data-section-id="67365873e079254848629f74"
-        data-controller="SectionWrapperController"
-        data-current-styles='{
-"imageOverlayOpacity": 0.15,
-"backgroundWidth": "background-width--full-bleed",
-"sectionHeight": "section-height--custom",
-"customSectionHeight": 0,
-"horizontalAlignment": "horizontal-alignment--center",
-"verticalAlignment": "vertical-alignment--middle",
-"contentWidth": "content-width--wide",
-"customContentWidth": 50,
-"sectionTheme": "light",
-"sectionAnimation": "none",
-"backgroundMode": "image",
-"generative": {
-"type": "gradient",
-"seed": 0,
-"count": 0,
-"size": 0,
-"speed": 0,
-"startColor": {
-"type": "SITE_PALETTE_COLOR",
-"sitePaletteColor": {
-"id": "lightAccent",
-"alpha": 1.0
-}
-},
-"endColor": {
-"type": "SITE_PALETTE_COLOR",
-"sitePaletteColor": {
-"id": "white",
-"alpha": 1.0
-}
-},
-"invertColors": false,
-"noiseIntensity": 0,
-"noiseScale": 0,
-"distortionScaleX": 0,
-"distortionScaleY": 0,
-"distortionSpeed": 40,
-"distortionIntensity": 90,
-"lightIntensity": 0,
-"lightX": 0,
-"bevelRotation": 0,
-"bevelSize": 0,
-"bevelStrength": 0,
-"complexity": 0,
-"cutoff": 0,
-"isBevelEnabled": false,
-"isBlurEnabled": false,
-"scale": 0,
-"speedMorph": 0,
-"speedTravel": 0,
-"steps": 0,
-"travelDirection": 0,
-"gradientType": "radial",
-"noiseBias": -50,
-"animateNoise": false,
-"distortionComplexity": 2,
-"distortionDirection": 180,
-"distortionMorphSpeed": 50,
-"distortionSeed": 50,
-"distortionSmoothness": 98,
-"linearGradientStartColorDistance": 0,
-"linearGradientEndColorDistance": 0,
-"linearGradientAngle": 0,
-"linearGradientAngleMotion": 0,
-"linearGradientRepeat": 0,
-"radialGradientRadius": 71,
-"radialGradientPositionX": 50,
-"radialGradientPositionY": 50,
-"radialGradientFollowCursor": true,
-"radialGradientFollowSpeed": 100,
-"imageScale": 0,
-"imageCount": 0,
-"patternEnabled": false,
-"patternSize": 0,
-"patternOffsetX": 0,
-"patternOffsetY": 0,
-"patternSpaceX": 0,
-"patternSpaceY": 0,
-"waveEnabled": false,
-"waveSpeed": 0,
-"waveComplexity": 0,
-"waveDepth": 0,
-"waveShadowDepth": 0,
-"boxSize": 0.0,
-"scaleX": 0,
-"scaleY": 0,
-"scaleZ": 0,
-"isMorphEnabled": false,
-"lightY": 0,
-"lightZ": 0,
-"noiseRange": 0,
-"positionFactor": 0,
-"scaleFactor": 0,
-"colorFactor": 0,
-"sizeVariance": 0,
-"wobble": 0,
-"morph": 0,
-"scrollMovement": 0,
-"patternScaleX": 0,
-"patternScaleY": 0,
-"patternPowerX": 0,
-"patternPowerY": 0,
-"patternAmount": 0,
-"surfaceHeight": 0,
-"colorStop1": 0,
-"colorStop2": 0,
-"colorStop3": 0,
-"colorStop4": 0,
-"gradientDistortionX": 0,
-"gradientDistortionY": 0,
-"curveX": 0,
-"curveY": 0,
-"curveFunnel": 0,
-"fogIntensity": 0,
-"repeat": 0,
-"rotation": 0,
-"rotationSpeed": 0,
-"blur": 0,
-"complexityY": 0,
-"complexityZ": 0,
-"amplitudeY": 0,
-"amplitudeZ": 0,
-"offset": 0,
-"lightAngle": 0,
-"alpha": 0
-}
-}'
-        data-current-context='{
-"video": {
-"playbackSpeed": 0.5,
-"filter": 1,
-"filterStrength": 0,
-"zoom": 0,
-"videoSourceProvider": "none"
-},
-"backgroundImageId": null,
-"backgroundMediaEffect": {
-"type": "none"
-},
-"divider": {
-"enabled": false
-},
-"typeName": "page"
-}'
-        data-animation="none"
-        data-fluid-engine-section=""
-      >
-        <div className="section-border">
-          <div className="section-background"></div>
-        </div>
-        <div
-          className="content-wrapper"
-          style={{
-            paddingTop: "calc(0vmax / 10)",
-            paddingBottom: "calc(0vmax / 10)"
-          }}
-        >
-          <div className="content">
-            <div data-fluid-engine="true">
-              <style
-                dangerouslySetInnerHTML={{
-                  __html:
-                    "\n\n.fe-67365873e079254848629f73 {\n  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);\n  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );\n\n  display: grid;\n  position: relative;\n  grid-area: 1/1/-1/-1;\n  grid-template-rows: repeat(5,minmax(24px, auto));\n  grid-template-columns:\n    minmax(var(--grid-gutter), 1fr)\n    repeat(8, minmax(0, var(--cell-max-width)))\n    minmax(var(--grid-gutter), 1fr);\n  row-gap: 11.0px;\n  column-gap: 11.0px;\n}\n\n@media (min-width: 768px) {\n  .background-width--inset .fe-67365873e079254848629f73 {\n    --inset-padding: calc(var(--sqs-site-gutter) * 2);\n  }\n\n  .fe-67365873e079254848629f73 {\n    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);\n    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );\n    --inset-padding: 0vw;\n\n    --row-height-scaling-factor: 0.0215;\n    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));\n\n    grid-template-rows: repeat(3,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));\n    grid-template-columns:\n      minmax(var(--grid-gutter), 1fr)\n      repeat(24, minmax(0, var(--cell-max-width)))\n      minmax(var(--grid-gutter), 1fr);\n  }\n}\n\n\n  .fe-block-49a0de279278179f3b2d {\n    grid-area: 1/2/3/10;\n    z-index: 8;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-49a0de279278179f3b2d .sqs-block {\n    justify-content: center;\n  }\n\n  .fe-block-49a0de279278179f3b2d .sqs-block-alignment-wrapper {\n    align-items: center;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-49a0de279278179f3b2d {\n      grid-area: 2/2/4/13;\n      z-index: 8;\n\n      \n    }\n\n    .fe-block-49a0de279278179f3b2d .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-49a0de279278179f3b2d .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d {\n    grid-area: 3/2/4/10;\n    z-index: 9;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d .sqs-block {\n    justify-content: flex-start;\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d .sqs-block-alignment-wrapper {\n    align-items: flex-start;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-1f465ecdc1ac6e046b6d {\n      grid-area: 3/2/4/10;\n      z-index: 9;\n\n      \n    }\n\n    .fe-block-1f465ecdc1ac6e046b6d .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-1f465ecdc1ac6e046b6d .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 {\n    grid-area: 4/2/6/10;\n    z-index: 9;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 .sqs-block {\n    justify-content: flex-start;\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 .sqs-block-alignment-wrapper {\n    align-items: flex-start;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-bb5630c3e9b5adaff3a2 {\n      grid-area: 2/14/4/27;\n      z-index: 9;\n\n      \n    }\n\n    .fe-block-bb5630c3e9b5adaff3a2 .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-bb5630c3e9b5adaff3a2 .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n"
-                }}
-              />
-              <div className="fluid-engine fe-67365873e079254848629f73">
-                <div className="fe-block fe-block-49a0de279278179f3b2d">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-49a0de279278179f3b2d"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2 style={{ whiteSpace: "pre-wrap" }}>
-                          <span className="sqsrte-text-color--white">
-                            Snake-safe
-                          </span>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-1f465ecdc1ac6e046b6d">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-1f465ecdc1ac6e046b6d"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <p className="" style={{ whiteSpace: "pre-wrap" }}>
-                          Real Science. Real Safety. By Dr Jonny Miller
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-bb5630c3e9b5adaff3a2">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-bb5630c3e9b5adaff3a2"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2
-                          style={{ textAlign: "right", whiteSpace: "pre-wrap" }}
-                        >
-                          <a href="mailto:email@example.com">
-                            <span className="sqsrte-text-color--black">
-                              drmiller@snake-safe.com
-                            </span>
-                          </a>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+   <Footer/>
   </div>
   <svg
     xmlns="http://www.w3.org/2000/svg"

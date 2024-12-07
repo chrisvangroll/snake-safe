@@ -1,0 +1,22 @@
+{
+    "english": {
+        "heading": "Who we are",
+        "text": "Dr Jonny Miller trained as a Biomedical Scientist through his BSc in Biomedical Sciences and PhD in Immunology (University of Manchester, UK), before turning his research interests towards Ecology and Genetics in the Neotropics. Through his varied fieldwork, research in conservation genetics, and building education programs, Jonny has managed expeditions to remote environments in Honduras, Chile, Paraguay and Costa Rica on behalf of various organizations. Jonny has been responsible for the welfare of up to 300 scientists, volunteers and students at a time on expeditions lasting as long as 3 months. Jonny's key to success in these endeavours is establishing rigorous safety training programs as well as solid protocols and communication for handling extreme situations effectively.  Jonny has over 30 years of experience handling snakes, from caring for his beloved childhood pet snakes, to studying species diversity and extracting lethal venom, to rescuing and releasing snakes back into the wild. Due to Jonny's unusual combination of roles in the medical sciences, ecology, logistics, and education, Jonny's training services have been sought out and greatly valued by organizations looking to protect their staff, clients and guests from snakes.",
+        "link": "https://www.youtube.com/user/jonnytropics",
+        "imageFeatured": "snake_on_arm.png",
+        "image-1": "IMG_8324.png",
+        "image-2": "group-photo.png",
+        "image-3": "group_paraguay-flag.jpg",
+        "image-4": "snake_explaining.jpg"
+    },
+    "spanish": {
+        "heading": "Quiénes somos",
+        "text": "El Dr. Jonny Miller se formó como Científico Biomédico a través de su licenciatura en Ciencias Biomédicas y su doctorado en Inmunología (Universidad de Manchester, Reino Unido), antes de dirigir sus intereses de investigación hacia la Ecología y la Genética en los Neotrópicos. A través de su variado trabajo de campo, investigación en genética de conservación y construcción de programas educativos, Jonny ha dirigido expediciones a entornos remotos en Honduras, Chile, Paraguay y Costa Rica en nombre de varias organizaciones. Jonny ha sido responsable del bienestar de hasta 300 científicos, voluntarios y estudiantes a la vez en expediciones que duraron hasta 3 meses. La clave del éxito de Jonny en estos esfuerzos es establecer rigurosos programas de capacitación en seguridad, así como protocolos sólidos y comunicación para manejar situaciones extremas de manera efectiva. Jonny tiene más de 30 años de experiencia manejando serpientes, desde cuidar a sus queridas serpientes mascota de la infancia, hasta estudiar la diversidad de especies y extraer veneno letal, y rescatar y liberar serpientes de regreso a la naturaleza. Debido a la inusual combinación de roles de Jonny en las ciencias médicas, la ecología, la logística y la educación, los servicios de capacitación de Jonny han sido buscados y muy valorados por organizaciones que buscan proteger a su personal, clientes e invitados de las serpientes.",
+        "link": "https://www.youtube.com/user/jonnytropics",
+        "imageFeatured": "snake_on_arm.png",
+        "image-1": "IMG_8324.png",
+        "image-2": "group-photo.png",
+        "image-3": "group_paraguay-flag.jpg",
+        "image-4": "snake_explaining.jpg"
+    }
+}

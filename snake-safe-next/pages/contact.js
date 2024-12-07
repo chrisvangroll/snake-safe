@@ -1,7 +1,19 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Header from '@/app/components/header/Header'
+import Content from "../content/contact.json";
+import { useSelector } from 'react-redux';
+import Footer from "@/app/components/footer/Footer";
+import '../src/styles/styles.css';
 
 const contact = () => {
+  const { english, spanish } = Content;
+  const language = useSelector((state) => state.language.language);
+  const [lang, setLang] = useState(english);
+
+  useEffect(()=>{
+    language === "en"? setLang(english) : setLang(spanish)
+  }, [language])
+
   return (
     <>
   <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -191,7 +203,7 @@ content-width--wide
                     >
                       <div className="sqs-block-content">
                         <div className="sqs-html-content">
-                          <h1 style={{ whiteSpace: "pre-wrap" }}>Contact Us</h1>
+                          <h1 style={{ whiteSpace: "pre-wrap" }}>{lang.heading}</h1>
                         </div>
                       </div>
                     </div>
@@ -207,16 +219,14 @@ content-width--wide
                       <div className="sqs-block-content">
                         <div className="sqs-html-content">
                           <p className="" style={{ whiteSpace: "pre-wrap" }}>
-                            If you’re interested in collaborating, please
-                            provide your information, and we will contact you
-                            soon. We look forward to connecting with you.
+                            {lang.subText}
                           </p>
                           <p className="" style={{ whiteSpace: "pre-wrap" }}>
                             <a href="mailto:email@example.com">
-                              email@example.com
+                              {lang.email}
                             </a>
                             <br />
-                            (555) 555-5555
+                            {lang.phone}
                           </p>
                         </div>
                       </div>
@@ -224,170 +234,11 @@ content-width--wide
                   </div>
                   <div className="fe-block fe-block-cc63e3e3dcd09634bbd7">
                     <div
-                      className="sqs-block form-block sqs-block-form"
-                      data-blend-mode="NORMAL"
-                      data-block-type={9}
-                      data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                      id="block-cc63e3e3dcd09634bbd7"
                     >
-                      <div className="sqs-block-content">
-                        <div
-                          id="form-submission-html-67365873e079254848629eb0"
-                          className="sqs-form-block-submission-html"
-                          data-submission-html=""
-                        />
-                        <div className="form-wrapper">
-                          <div className="form-inner-wrapper" hidden="">
-                            <form
-                              data-form-id="67365873e079254848629eb0"
-                              data-success-redirect=""
-                              data-dynamic-strings=""
-                              autoComplete="on"
-                              method="POST"
-                              action="https://sepia-plum-s8c9.squarespace.com"
-                              noValidate=""
-                              onsubmit="return (function (form) {
-  Y.use('squarespace-form-submit', 'node', function usingFormSubmit(Y) {
-    (new Y.Squarespace.FormSubmit(form)).submit({
-formId: '67365873e079254848629eb0',
-collectionId: '67365872e079254848629df0',
-objectName: 'cc63e3e3dcd09634bbd7'
-    });
-  });
-  return false;
-})(this);"
-                            >
-                              <div className="field-list clear">
-                                <fieldset
-                                  id="name-yui_3_17_2_1_1656615088309_7771"
-                                  className="form-item fields name required"
-                                >
-                                  <legend className="title">
-                                    Name
-                                    <span
-                                      className="required"
-                                      aria-hidden="true"
-                                    >
-                                      *
-                                    </span>
-                                  </legend>
-                                  <div className="field first-name">
-                                    <label className="caption">
-                                      <input
-                                        className="field-element field-control"
-                                        name="fname"
-                                        x-autocompletetype="given-name"
-                                        type="text"
-                                        spellCheck="false"
-                                        maxLength={30}
-                                        data-title="First"
-                                        aria-required="true"
-                                      />
-                                      <span className="caption-text">
-                                        First Name
-                                      </span>
-                                    </label>
-                                  </div>
-                                  <div className="field last-name">
-                                    <label className="caption">
-                                      <input
-                                        className="field-element field-control"
-                                        name="lname"
-                                        x-autocompletetype="surname"
-                                        type="text"
-                                        spellCheck="false"
-                                        maxLength={30}
-                                        data-title="Last"
-                                        aria-required="true"
-                                      />
-                                      <span className="caption-text">
-                                        Last Name
-                                      </span>
-                                    </label>
-                                  </div>
-                                </fieldset>
-                                <div
-                                  id="email-yui_3_17_2_1_1656615088309_7772"
-                                  className="form-item field email required"
-                                >
-                                  <label
-                                    className="title"
-                                    htmlFor="email-yui_3_17_2_1_1656615088309_7772-field"
-                                  >
-                                    Email
-                                    <span
-                                      className="required"
-                                      aria-hidden="true"
-                                    >
-                                      *
-                                    </span>
-                                  </label>
-                                  <input
-                                    className="field-element"
-                                    id="email-yui_3_17_2_1_1656615088309_7772-field"
-                                    name="email"
-                                    type="email"
-                                    autoComplete="email"
-                                    spellCheck="false"
-                                    aria-required="true"
-                                  />
-                                </div>
-                                <div
-                                  id="textarea-yui_3_17_2_1_1656615088309_7774"
-                                  className="form-item field textarea required"
-                                >
-                                  <label
-                                    className="title"
-                                    htmlFor="textarea-yui_3_17_2_1_1656615088309_7774-field"
-                                  >
-                                    Message
-                                    <span
-                                      className="required"
-                                      aria-hidden="true"
-                                    >
-                                      *
-                                    </span>
-                                  </label>
-                                  <textarea
-                                    className="field-element "
-                                    id="textarea-yui_3_17_2_1_1656615088309_7774-field"
-                                    aria-required="true"
-                                    defaultValue={""}
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                className="captcha-container
-  align-left
-  
-  
-  "
-                                data-theme="light"
-                              />
-                              <div
-                                data-animation-role="button"
-                                className="
-    form-button-wrapper
-    
-  "
-                              >
-                                <input
-                                  className="button sqs-system-button sqs-editable-button sqs-button-element--primary"
-                                  type="submit"
-                                  defaultValue="SEND"
-                                />
-                              </div>
-                              <div className="hidden form-submission-text">
-                                Thank you!
-                              </div>
-                              <div
-                                className="hidden form-submission-html"
-                                data-submission-html=""
-                              />
-                            </form>
-                          </div>
-                        </div>
-                      </div>
+                   <a href={`mailto:${lang.email}`} className="button sqs-system-button sqs-editable-button sqs-button-element--primary contact-btn">
+  {lang.contactBtn}
+</a>
+
                     </div>
                   </div>
                   <div className="fe-block fe-block-561e548d7e0cd8f5e351">
@@ -427,14 +278,12 @@ objectName: 'cc63e3e3dcd09634bbd7'
                               <div className="content-fill">
                                 <img
                                   data-stretch="true"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png"
                                   data-image-dimensions="1792x1024"
                                   data-image-focal-point="0.5,0.5"
                                   alt="Placeholder"
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png"
+                                  src={lang.img}
                                   width={1792}
                                   height={1024}
                                   sizes="100vw"
@@ -443,7 +292,6 @@ objectName: 'cc63e3e3dcd09634bbd7'
                                     objectFit: "cover",
                                     objectPosition: "50% 50%"
                                   }}
-                                  srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/1722371798.86703-ITTSCVHUPWELGPGILNWN/imgg-od3-xmq0na09.png?format=2500w 2500w"
                                   loading="lazy"
                                   decoding="async"
                                   data-loader="sqs"
@@ -469,265 +317,7 @@ objectName: 'cc63e3e3dcd09634bbd7'
         </section>
       </article>
     </main>
-    <footer className="sections" id="footer-sections" data-footer-sections="">
-      <section
-        data-test="page-section"
-        data-section-theme="light"
-        className="page-section 
-    
-full-bleed-section
-layout-engine-section
-    
-    background-width--full-bleed
-    
-
-  section-height--custom
-
-    
-    
-content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-
-    
-    
-    light"
-        data-section-id="67365873e079254848629f74"
-        data-controller="SectionWrapperController"
-        data-current-styles='{
-"imageOverlayOpacity": 0.15,
-"backgroundWidth": "background-width--full-bleed",
-"sectionHeight": "section-height--custom",
-"customSectionHeight": 0,
-"horizontalAlignment": "horizontal-alignment--center",
-"verticalAlignment": "vertical-alignment--middle",
-"contentWidth": "content-width--wide",
-"customContentWidth": 50,
-"sectionTheme": "light",
-"sectionAnimation": "none",
-"backgroundMode": "image",
-"generative": {
-"type": "gradient",
-"seed": 0,
-"count": 0,
-"size": 0,
-"speed": 0,
-"startColor": {
-"type": "SITE_PALETTE_COLOR",
-"sitePaletteColor": {
-"id": "lightAccent",
-"alpha": 1.0
-}
-},
-"endColor": {
-"type": "SITE_PALETTE_COLOR",
-"sitePaletteColor": {
-"id": "white",
-"alpha": 1.0
-}
-},
-"invertColors": false,
-"noiseIntensity": 0,
-"noiseScale": 0,
-"distortionScaleX": 0,
-"distortionScaleY": 0,
-"distortionSpeed": 40,
-"distortionIntensity": 90,
-"lightIntensity": 0,
-"lightX": 0,
-"bevelRotation": 0,
-"bevelSize": 0,
-"bevelStrength": 0,
-"complexity": 0,
-"cutoff": 0,
-"isBevelEnabled": false,
-"isBlurEnabled": false,
-"scale": 0,
-"speedMorph": 0,
-"speedTravel": 0,
-"steps": 0,
-"travelDirection": 0,
-"gradientType": "radial",
-"noiseBias": -50,
-"animateNoise": false,
-"distortionComplexity": 2,
-"distortionDirection": 180,
-"distortionMorphSpeed": 50,
-"distortionSeed": 50,
-"distortionSmoothness": 98,
-"linearGradientStartColorDistance": 0,
-"linearGradientEndColorDistance": 0,
-"linearGradientAngle": 0,
-"linearGradientAngleMotion": 0,
-"linearGradientRepeat": 0,
-"radialGradientRadius": 71,
-"radialGradientPositionX": 50,
-"radialGradientPositionY": 50,
-"radialGradientFollowCursor": true,
-"radialGradientFollowSpeed": 100,
-"imageScale": 0,
-"imageCount": 0,
-"patternEnabled": false,
-"patternSize": 0,
-"patternOffsetX": 0,
-"patternOffsetY": 0,
-"patternSpaceX": 0,
-"patternSpaceY": 0,
-"waveEnabled": false,
-"waveSpeed": 0,
-"waveComplexity": 0,
-"waveDepth": 0,
-"waveShadowDepth": 0,
-"boxSize": 0.0,
-"scaleX": 0,
-"scaleY": 0,
-"scaleZ": 0,
-"isMorphEnabled": false,
-"lightY": 0,
-"lightZ": 0,
-"noiseRange": 0,
-"positionFactor": 0,
-"scaleFactor": 0,
-"colorFactor": 0,
-"sizeVariance": 0,
-"wobble": 0,
-"morph": 0,
-"scrollMovement": 0,
-"patternScaleX": 0,
-"patternScaleY": 0,
-"patternPowerX": 0,
-"patternPowerY": 0,
-"patternAmount": 0,
-"surfaceHeight": 0,
-"colorStop1": 0,
-"colorStop2": 0,
-"colorStop3": 0,
-"colorStop4": 0,
-"gradientDistortionX": 0,
-"gradientDistortionY": 0,
-"curveX": 0,
-"curveY": 0,
-"curveFunnel": 0,
-"fogIntensity": 0,
-"repeat": 0,
-"rotation": 0,
-"rotationSpeed": 0,
-"blur": 0,
-"complexityY": 0,
-"complexityZ": 0,
-"amplitudeY": 0,
-"amplitudeZ": 0,
-"offset": 0,
-"lightAngle": 0,
-"alpha": 0
-}
-}'
-        data-current-context='{
-"video": {
-"playbackSpeed": 0.5,
-"filter": 1,
-"filterStrength": 0,
-"zoom": 0,
-"videoSourceProvider": "none"
-},
-"backgroundImageId": null,
-"backgroundMediaEffect": {
-"type": "none"
-},
-"divider": {
-"enabled": false
-},
-"typeName": "page"
-}'
-        data-animation="none"
-        data-fluid-engine-section=""
-      >
-        <div className="section-border">
-          <div className="section-background"></div>
-        </div>
-        <div
-          className="content-wrapper"
-          style={{
-            paddingTop: "calc(0vmax / 10)",
-            paddingBottom: "calc(0vmax / 10)"
-          }}
-        >
-          <div className="content">
-            <div data-fluid-engine="true">
-              <style
-                dangerouslySetInnerHTML={{
-                  __html:
-                    "\n\n.fe-67365873e079254848629f73 {\n  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);\n  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );\n\n  display: grid;\n  position: relative;\n  grid-area: 1/1/-1/-1;\n  grid-template-rows: repeat(5,minmax(24px, auto));\n  grid-template-columns:\n    minmax(var(--grid-gutter), 1fr)\n    repeat(8, minmax(0, var(--cell-max-width)))\n    minmax(var(--grid-gutter), 1fr);\n  row-gap: 11.0px;\n  column-gap: 11.0px;\n}\n\n@media (min-width: 768px) {\n  .background-width--inset .fe-67365873e079254848629f73 {\n    --inset-padding: calc(var(--sqs-site-gutter) * 2);\n  }\n\n  .fe-67365873e079254848629f73 {\n    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);\n    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );\n    --inset-padding: 0vw;\n\n    --row-height-scaling-factor: 0.0215;\n    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));\n\n    grid-template-rows: repeat(3,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));\n    grid-template-columns:\n      minmax(var(--grid-gutter), 1fr)\n      repeat(24, minmax(0, var(--cell-max-width)))\n      minmax(var(--grid-gutter), 1fr);\n  }\n}\n\n\n  .fe-block-49a0de279278179f3b2d {\n    grid-area: 1/2/3/10;\n    z-index: 8;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-49a0de279278179f3b2d .sqs-block {\n    justify-content: center;\n  }\n\n  .fe-block-49a0de279278179f3b2d .sqs-block-alignment-wrapper {\n    align-items: center;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-49a0de279278179f3b2d {\n      grid-area: 2/2/4/13;\n      z-index: 8;\n\n      \n    }\n\n    .fe-block-49a0de279278179f3b2d .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-49a0de279278179f3b2d .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d {\n    grid-area: 3/2/4/10;\n    z-index: 9;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d .sqs-block {\n    justify-content: flex-start;\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d .sqs-block-alignment-wrapper {\n    align-items: flex-start;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-1f465ecdc1ac6e046b6d {\n      grid-area: 3/2/4/10;\n      z-index: 9;\n\n      \n    }\n\n    .fe-block-1f465ecdc1ac6e046b6d .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-1f465ecdc1ac6e046b6d .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 {\n    grid-area: 4/2/6/10;\n    z-index: 9;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 .sqs-block {\n    justify-content: flex-start;\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 .sqs-block-alignment-wrapper {\n    align-items: flex-start;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-bb5630c3e9b5adaff3a2 {\n      grid-area: 2/14/4/27;\n      z-index: 9;\n\n      \n    }\n\n    .fe-block-bb5630c3e9b5adaff3a2 .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-bb5630c3e9b5adaff3a2 .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n"
-                }}
-              />
-              <div className="fluid-engine fe-67365873e079254848629f73">
-                <div className="fe-block fe-block-49a0de279278179f3b2d">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-49a0de279278179f3b2d"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2 style={{ whiteSpace: "pre-wrap" }}>
-                          <span className="sqsrte-text-color--white">
-                            Snake-safe
-                          </span>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-1f465ecdc1ac6e046b6d">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-1f465ecdc1ac6e046b6d"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <p className="" style={{ whiteSpace: "pre-wrap" }}>
-                          Real Science. Real Safety. By Dr Jonny Miller
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-bb5630c3e9b5adaff3a2">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-bb5630c3e9b5adaff3a2"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2
-                          style={{ textAlign: "right", whiteSpace: "pre-wrap" }}
-                        >
-                          <a href="mailto:email@example.com">
-                            <span className="sqsrte-text-color--black">
-                              drmiller@snake-safe.com
-                            </span>
-                          </a>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+   <Footer/>
   </div>
   <svg
     xmlns="http://www.w3.org/2000/svg"

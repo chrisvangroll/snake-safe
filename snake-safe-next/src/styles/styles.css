@@ -4,3 +4,17 @@
         top: -40px;
     }
 }
+
+.contact-btn {
+    color: white;
+    background: rgb(24, 34, 65);
+    font-size: 24px !important;
+    font-family: "manrope";
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    color: rgb(24, 34, 65);
+    background: white;
+}

@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Header from "@/app/components/header/Header";
+import Content from "../content/services.json";
+import { useSelector } from 'react-redux';
+import Footer from "@/app/components/footer/Footer";
+import '../src/styles/styles.css';
 
 const services = () => {
+  const { english, spanish } = Content;
+  const language = useSelector((state) => state.language.language);
+  const [lang, setLang] = useState(english);
+
+  useEffect(()=>{
+    language === "en"? setLang(english) : setLang(spanish)
+  }, [language])
+
   return (
     <>
      <>
@@ -90,9 +102,6 @@ const services = () => {
           >
             <path d="M4.69551 0.000432948C2.10179 0.000432948 0 2.09856 0 4.68769C0 7.27686 2.10183 9.37496 4.69551 9.37496H23.43C31.2022 28.5892 38.8567 47.8378 46.5654 67.089L39.4737 84.129C38.8799 85.5493 39.0464 87.2634 39.905 88.5418C40.7622 89.8216 42.2856 90.6283 43.8271 90.6232H122.088C124.568 90.658 126.85 88.4129 126.85 85.9359C126.85 83.4589 124.569 81.214 122.088 81.2487H50.8702L54.9305 71.5802L130.306 65.5745C132.279 65.4199 134.064 63.8849 134.512 61.9608L143.903 21.337C144.518 18.6009 142.114 15.6147 139.306 15.624H36.0522L30.9654 2.92939C30.2682 1.21146 28.4698 0 26.612 0L4.69551 0.000432948ZM39.8152 24.9999H133.385L126.097 56.5426L54.7339 62.2067L39.8152 24.9999ZM59.4777 93.75C50.8885 93.75 43.8252 100.801 43.8252 109.375C43.8252 117.949 50.8885 125 59.4777 125C68.0669 125 75.1301 117.949 75.1301 109.375C75.1301 100.801 68.0669 93.75 59.4777 93.75ZM106.433 93.75C97.8436 93.75 90.7803 100.801 90.7803 109.375C90.7803 117.949 97.8436 125 106.433 125C115.022 125 122.085 117.949 122.085 109.375C122.085 100.801 115.022 93.75 106.433 93.75ZM59.4777 103.125C62.9906 103.125 65.7378 105.867 65.7378 109.374C65.7378 112.88 62.9905 115.623 59.4777 115.623C55.9647 115.623 53.2175 112.88 53.2175 109.374C53.2175 105.867 55.9649 103.125 59.4777 103.125ZM106.433 103.125C109.946 103.125 112.693 105.867 112.693 109.374C112.693 112.88 109.946 115.623 106.433 115.623C102.92 115.623 100.173 112.88 100.173 109.374C100.173 105.867 102.92 103.125 106.433 103.125Z" />
           </svg>
-          <div className="legacy-cart icon-cart-quantity">
-            <span className="sqs-cart-quantity">0</span>
-          </div>
         </span>
       </a>
     </div>
@@ -198,7 +207,7 @@ content-width--wide
                               className="sqsrte-text-color--custom"
                               style={{ color: "#FFF6DC" }}
                             >
-                              <strong>Snake-Safe Services</strong>
+                              <strong>{lang.heading}</strong>
                             </span>
                           </h1>
                         </div>
@@ -219,11 +228,7 @@ content-width--wide
                             className="sqsrte-large"
                             style={{ whiteSpace: "pre-wrap" }}
                           >
-                            Get in touch today to discuss how we can provide
-                            tailored solutions for your company, staff and
-                            guests. Each Assessment or Training Module can be
-                            provided independently or in any combination that
-                            suits you.
+                            {lang.subText}
                           </p>
                         </div>
                       </div>
@@ -249,7 +254,7 @@ content-width--wide
                               className="sqsrte-text-color--custom"
                               style={{ color: "#FFF6DC" }}
                             >
-                              <strong>Risk Assessment:</strong>
+                              <strong>{lang.riskAssessment.title}</strong>
                             </span>
                           </h2>
                         </div>
@@ -292,14 +297,12 @@ content-width--wide
                               <div className="content-fit">
                                 <img
                                   data-stretch="false"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg"
                                   data-image-dimensions="1659x1244"
                                   data-image-focal-point="0.5,0.5"
                                   alt=""
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg"
+                                  src={lang.riskAssessment.img}
                                   width={1659}
                                   height={1244}
                                   sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 25vw"
@@ -308,7 +311,6 @@ content-width--wide
                                     objectFit: "contain",
                                     objectPosition: "50% 50%"
                                   }}
-                                  srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/9540b27f-4341-45cc-b2ec-bc78edfda294/Map+images.pptx.jpg?format=2500w 2500w"
                                   loading="lazy"
                                   decoding="async"
                                   data-loader="sqs"
@@ -344,10 +346,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Assessment of property, identification of
-                                  locations and practices that support snake
-                                  entry, refuge, hunting and
-                                  reproduction.&nbsp;&nbsp;&nbsp;&nbsp;
+                                 {lang.riskAssessment.bullets[0]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -360,9 +359,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Tailor-made, site-specific action plan to
-                                  reduce snake presence and bite risk on the
-                                  property.&nbsp;
+                                {lang.riskAssessment.bullets[1]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -373,8 +370,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Contingency plan building for snake bite
-                                  emergencies&nbsp;
+                                {lang.riskAssessment.bullets[2]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -404,7 +400,7 @@ content-width--wide
                               className="sqsrte-text-color--custom"
                               style={{ color: "#FFF6DC" }}
                             >
-                              <strong>Training modules:</strong>
+                              <strong>{lang.trainingModules.title}</strong>
                             </span>
                           </h2>
                         </div>
@@ -433,14 +429,7 @@ content-width--wide
                               style={{ color: "#FFF6DC" }}
                             >
                               <strong>
-                                <em> 1. Land and Emergency</em>
-                              </strong>
-                              <em>
-                                {" "}
-                                <br />{" "}
-                              </em>
-                              <strong>
-                                <em>Management Training</em>
+                                <em>{lang.trainingModules.modules[0].module}</em>
                               </strong>
                               &nbsp;
                             </span>
@@ -452,8 +441,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Best practices for reducing snakes hunting and
-                                  breeding on your property
+                                  {lang.trainingModules.modules[0].bullets[0]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -464,9 +452,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Building effective systems for incidence
-                                  reporting, action plans and emergency
-                                  management{" "}
+                                 {lang.trainingModules.modules[0].bullets[1]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -477,8 +463,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Minimizing incidents through information and
-                                  signage to promote best practices{" "}
+                                 {lang.trainingModules.modules[0].bullets[2]}
                                 </strong>
                               </p>
                             </li>
@@ -523,14 +508,12 @@ content-width--wide
                               <div className="content-fit">
                                 <img
                                   data-stretch="false"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png"
                                   data-image-dimensions="2500x1875"
                                   data-image-focal-point="0.5,0.5"
                                   alt=""
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png"
+                                  src={lang.trainingModules.modules[0].img}
                                   width={2500}
                                   height={1875}
                                   sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 25vw"
@@ -539,7 +522,6 @@ content-width--wide
                                     objectFit: "contain",
                                     objectPosition: "50% 50%"
                                   }}
-                                  srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/afb3353e-bd7a-4ea1-888f-f43186210fa4/IMG_8324.png?format=2500w 2500w"
                                   loading="lazy"
                                   decoding="async"
                                   data-loader="sqs"
@@ -594,14 +576,12 @@ content-width--wide
                               <div className="content-fit">
                                 <img
                                   data-stretch="false"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg"
                                   data-image-dimensions="1869x1402"
                                   data-image-focal-point="0.5,0.5"
                                   alt=""
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg"
+                                  src={lang.trainingModules.modules[1].img}
                                   width={1869}
                                   height={1402}
                                   sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 25vw"
@@ -610,7 +590,6 @@ content-width--wide
                                     objectFit: "contain",
                                     objectPosition: "50% 50%"
                                   }}
-                                  srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/6ddf77c1-d031-4890-8176-d27f9554ca5c/first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.jpg?format=2500w 2500w"
                                   loading="lazy"
                                   decoding="async"
                                   data-loader="sqs"
@@ -648,7 +627,7 @@ content-width--wide
                               style={{ color: "#FFF6DC" }}
                             >
                               <strong>
-                                <em> 2. Snake Bite First Aid Training</em>
+                                <em>{lang.trainingModules.modules[1].module}</em>
                               </strong>
                               <em>&nbsp;</em>
                             </span>
@@ -660,8 +639,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Theory: Understanding snake venom and
-                                  treatment myths&nbsp;
+                                  {lang.trainingModules.modules[1].bullets[0]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -672,9 +650,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Practical: How to administer first aid to a
-                                  snakebite victim, protocol to get to emergency
-                                  services
+                                {lang.trainingModules.modules[1].bullets[1]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -708,13 +684,7 @@ content-width--wide
                               style={{ color: "#FFF6DC" }}
                             >
                               <strong>
-                                <em> 3.</em>
-                              </strong>
-                              <em> </em>
-                              <strong>
-                                <em>
-                                  Snake Removal and <br /> Relocation Training
-                                </em>
+                              {lang.trainingModules.modules[2].module}
                               </strong>
                               &nbsp;
                             </span>
@@ -726,8 +696,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                  Understanding the tools and techniques to
-                                  humanely and safely remove and relocate snakes
+                                {lang.trainingModules.modules[2].bullets[0]}
                                 </strong>
                                 &nbsp;
                               </p>
@@ -773,14 +742,12 @@ content-width--wide
                               <div className="content-fit">
                                 <img
                                   data-stretch="false"
-                                  data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg"
-                                  data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg"
                                   data-image-dimensions="1667x1250"
                                   data-image-focal-point="0.5,0.5"
-                                  alt=""
+                                  alt="Man wrangling a snake with a tool"
                                   data-load="false"
                                   elementtiming="system-image-block"
-                                  src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg"
+                                  src={lang.trainingModules.modules[2].img}
                                   width={1667}
                                   height={1250}
                                   sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 25vw"
@@ -789,7 +756,6 @@ content-width--wide
                                     objectFit: "contain",
                                     objectPosition: "50% 50%"
                                   }}
-                                  srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/184130d1-3cea-4367-858d-248faae5000c/DSC_0473.jpg?format=2500w 2500w"
                                   loading="lazy"
                                   decoding="async"
                                   data-loader="sqs"
@@ -815,265 +781,7 @@ content-width--wide
         </section>
       </article>
     </main>
-    <footer className="sections" id="footer-sections" data-footer-sections="">
-      <section
-        data-test="page-section"
-        data-section-theme="light"
-        className="page-section 
-    
-full-bleed-section
-layout-engine-section
-    
-    background-width--full-bleed
-    
-
-  section-height--custom
-
-    
-    
-content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-
-    
-    
-    light"
-        data-section-id="67365873e079254848629f74"
-        data-controller="SectionWrapperController"
-        data-current-styles='{
-"imageOverlayOpacity": 0.15,
-"backgroundWidth": "background-width--full-bleed",
-"sectionHeight": "section-height--custom",
-"customSectionHeight": 0,
-"horizontalAlignment": "horizontal-alignment--center",
-"verticalAlignment": "vertical-alignment--middle",
-"contentWidth": "content-width--wide",
-"customContentWidth": 50,
-"sectionTheme": "light",
-"sectionAnimation": "none",
-"backgroundMode": "image",
-"generative": {
-"type": "gradient",
-"seed": 0,
-"count": 0,
-"size": 0,
-"speed": 0,
-"startColor": {
-"type": "SITE_PALETTE_COLOR",
-"sitePaletteColor": {
-"id": "lightAccent",
-"alpha": 1.0
-}
-},
-"endColor": {
-"type": "SITE_PALETTE_COLOR",
-"sitePaletteColor": {
-"id": "white",
-"alpha": 1.0
-}
-},
-"invertColors": false,
-"noiseIntensity": 0,
-"noiseScale": 0,
-"distortionScaleX": 0,
-"distortionScaleY": 0,
-"distortionSpeed": 40,
-"distortionIntensity": 90,
-"lightIntensity": 0,
-"lightX": 0,
-"bevelRotation": 0,
-"bevelSize": 0,
-"bevelStrength": 0,
-"complexity": 0,
-"cutoff": 0,
-"isBevelEnabled": false,
-"isBlurEnabled": false,
-"scale": 0,
-"speedMorph": 0,
-"speedTravel": 0,
-"steps": 0,
-"travelDirection": 0,
-"gradientType": "radial",
-"noiseBias": -50,
-"animateNoise": false,
-"distortionComplexity": 2,
-"distortionDirection": 180,
-"distortionMorphSpeed": 50,
-"distortionSeed": 50,
-"distortionSmoothness": 98,
-"linearGradientStartColorDistance": 0,
-"linearGradientEndColorDistance": 0,
-"linearGradientAngle": 0,
-"linearGradientAngleMotion": 0,
-"linearGradientRepeat": 0,
-"radialGradientRadius": 71,
-"radialGradientPositionX": 50,
-"radialGradientPositionY": 50,
-"radialGradientFollowCursor": true,
-"radialGradientFollowSpeed": 100,
-"imageScale": 0,
-"imageCount": 0,
-"patternEnabled": false,
-"patternSize": 0,
-"patternOffsetX": 0,
-"patternOffsetY": 0,
-"patternSpaceX": 0,
-"patternSpaceY": 0,
-"waveEnabled": false,
-"waveSpeed": 0,
-"waveComplexity": 0,
-"waveDepth": 0,
-"waveShadowDepth": 0,
-"boxSize": 0.0,
-"scaleX": 0,
-"scaleY": 0,
-"scaleZ": 0,
-"isMorphEnabled": false,
-"lightY": 0,
-"lightZ": 0,
-"noiseRange": 0,
-"positionFactor": 0,
-"scaleFactor": 0,
-"colorFactor": 0,
-"sizeVariance": 0,
-"wobble": 0,
-"morph": 0,
-"scrollMovement": 0,
-"patternScaleX": 0,
-"patternScaleY": 0,
-"patternPowerX": 0,
-"patternPowerY": 0,
-"patternAmount": 0,
-"surfaceHeight": 0,
-"colorStop1": 0,
-"colorStop2": 0,
-"colorStop3": 0,
-"colorStop4": 0,
-"gradientDistortionX": 0,
-"gradientDistortionY": 0,
-"curveX": 0,
-"curveY": 0,
-"curveFunnel": 0,
-"fogIntensity": 0,
-"repeat": 0,
-"rotation": 0,
-"rotationSpeed": 0,
-"blur": 0,
-"complexityY": 0,
-"complexityZ": 0,
-"amplitudeY": 0,
-"amplitudeZ": 0,
-"offset": 0,
-"lightAngle": 0,
-"alpha": 0
-}
-}'
-        data-current-context='{
-"video": {
-"playbackSpeed": 0.5,
-"filter": 1,
-"filterStrength": 0,
-"zoom": 0,
-"videoSourceProvider": "none"
-},
-"backgroundImageId": null,
-"backgroundMediaEffect": {
-"type": "none"
-},
-"divider": {
-"enabled": false
-},
-"typeName": "page"
-}'
-        data-animation="none"
-        data-fluid-engine-section=""
-      >
-        <div className="section-border">
-          <div className="section-background"></div>
-        </div>
-        <div
-          className="content-wrapper"
-          style={{
-            paddingTop: "calc(0vmax / 10)",
-            paddingBottom: "calc(0vmax / 10)"
-          }}
-        >
-          <div className="content">
-            <div data-fluid-engine="true">
-              <style
-                dangerouslySetInnerHTML={{
-                  __html:
-                    "\n\n.fe-67365873e079254848629f73 {\n  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);\n  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );\n\n  display: grid;\n  position: relative;\n  grid-area: 1/1/-1/-1;\n  grid-template-rows: repeat(5,minmax(24px, auto));\n  grid-template-columns:\n    minmax(var(--grid-gutter), 1fr)\n    repeat(8, minmax(0, var(--cell-max-width)))\n    minmax(var(--grid-gutter), 1fr);\n  row-gap: 11.0px;\n  column-gap: 11.0px;\n}\n\n@media (min-width: 768px) {\n  .background-width--inset .fe-67365873e079254848629f73 {\n    --inset-padding: calc(var(--sqs-site-gutter) * 2);\n  }\n\n  .fe-67365873e079254848629f73 {\n    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);\n    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );\n    --inset-padding: 0vw;\n\n    --row-height-scaling-factor: 0.0215;\n    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));\n\n    grid-template-rows: repeat(3,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));\n    grid-template-columns:\n      minmax(var(--grid-gutter), 1fr)\n      repeat(24, minmax(0, var(--cell-max-width)))\n      minmax(var(--grid-gutter), 1fr);\n  }\n}\n\n\n  .fe-block-49a0de279278179f3b2d {\n    grid-area: 1/2/3/10;\n    z-index: 8;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-49a0de279278179f3b2d .sqs-block {\n    justify-content: center;\n  }\n\n  .fe-block-49a0de279278179f3b2d .sqs-block-alignment-wrapper {\n    align-items: center;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-49a0de279278179f3b2d {\n      grid-area: 2/2/4/13;\n      z-index: 8;\n\n      \n    }\n\n    .fe-block-49a0de279278179f3b2d .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-49a0de279278179f3b2d .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d {\n    grid-area: 3/2/4/10;\n    z-index: 9;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d .sqs-block {\n    justify-content: flex-start;\n  }\n\n  .fe-block-1f465ecdc1ac6e046b6d .sqs-block-alignment-wrapper {\n    align-items: flex-start;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-1f465ecdc1ac6e046b6d {\n      grid-area: 3/2/4/10;\n      z-index: 9;\n\n      \n    }\n\n    .fe-block-1f465ecdc1ac6e046b6d .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-1f465ecdc1ac6e046b6d .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 {\n    grid-area: 4/2/6/10;\n    z-index: 9;\n\n    @media (max-width: 767px) {\n      \n    }\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 .sqs-block {\n    justify-content: flex-start;\n  }\n\n  .fe-block-bb5630c3e9b5adaff3a2 .sqs-block-alignment-wrapper {\n    align-items: flex-start;\n  }\n\n  @media (min-width: 768px) {\n    .fe-block-bb5630c3e9b5adaff3a2 {\n      grid-area: 2/14/4/27;\n      z-index: 9;\n\n      \n    }\n\n    .fe-block-bb5630c3e9b5adaff3a2 .sqs-block {\n      justify-content: flex-start;\n    }\n\n    .fe-block-bb5630c3e9b5adaff3a2 .sqs-block-alignment-wrapper {\n      align-items: flex-start;\n    }\n  }\n\n"
-                }}
-              />
-              <div className="fluid-engine fe-67365873e079254848629f73">
-                <div className="fe-block fe-block-49a0de279278179f3b2d">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-49a0de279278179f3b2d"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2 style={{ whiteSpace: "pre-wrap" }}>
-                          <span className="sqsrte-text-color--white">
-                            Snake-safe
-                          </span>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-1f465ecdc1ac6e046b6d">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-1f465ecdc1ac6e046b6d"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <p className="" style={{ whiteSpace: "pre-wrap" }}>
-                          Real Science. Real Safety. By Dr Jonny Miller
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-bb5630c3e9b5adaff3a2">
-                  <div
-                    className="sqs-block html-block sqs-block-html"
-                    data-blend-mode="NORMAL"
-                    data-block-type={2}
-                    data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
-                    id="block-bb5630c3e9b5adaff3a2"
-                  >
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2
-                          style={{ textAlign: "right", whiteSpace: "pre-wrap" }}
-                        >
-                          <a href="mailto:email@example.com">
-                            <span className="sqsrte-text-color--black">
-                              drmiller@snake-safe.com
-                            </span>
-                          </a>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+    <Footer/>
   </div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
