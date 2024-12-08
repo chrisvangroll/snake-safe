@@ -1,23 +1,26 @@
 {
-    "english": {
-      "company": "Snake-safe",
-      "motto": "Real Science. Real Safety.",
-      "author": "By Jonny Miller",
-      "links": {
-        "about": "About",
-        "services": "Services",
-        "contact": "Contact"
-      }
+  "english": {
+    "company": "Snake-safe",
+    "motto": "Real Science. Real Safety.",
+    "author": "By Jonny Miller",
+    "ogDescription": "Learn how to handle snakes safely and confidently with our expert-guided training. Our services prioritize safety and real-world techniques to equip you with the knowledge and skills needed for effective snake handling. Perfect for professionals and enthusiasts alike.",
+    "links": {
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
     },
-    "spanish": {
-      "company": "Snake-safe",
-      "motto": "Ciencia real. Seguridad real.",
-      "author": "por Jonny Miller",
-      "links": {
-        "about": "Nosotros",
-        "services": "Servicios",
-        "contact": "Contacto"
-      }
+    "favicon": "default-favicon.ico"
+  },
+  "spanish": {
+    "company": "Snake-safe",
+    "motto": "Ciencia real. Seguridad real.",
+    "author": "por Jonny Miller",
+    "ogDescription": "Aprende a manejar serpientes de manera segura y con confianza con nuestra capacitación guiada por expertos. Nuestros servicios priorizan la seguridad y técnicas prácticas para brindarte el conocimiento y las habilidades necesarias para un manejo efectivo de serpientes. Perfecto para profesionales y aficionados.",
+    "links": {
+      "about": "Nosotros",
+      "services": "Servicios",
+      "contact": "Contacto"
     }
-  }
-  
+  },
+  "favicon": "default-favicon.ico"
+}

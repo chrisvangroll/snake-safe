@@ -12,8 +12,8 @@ export default function Home() {
   const language = useSelector((state) => state.language.language);
   const [lang, setLang] = useState(english);
 
-  useEffect(()=>{
-    language === "en"? setLang(english) : setLang(spanish)
+  useEffect(() => {
+    language === "en" ? setLang(english) : setLang(spanish)
   }, [language])
 
   useEffect(() => {
@@ -28,73 +28,12 @@ export default function Home() {
 
     return () => {
       if (burgerButton) {
-        burgerButton.removeEventListener("click", () => {});
+        burgerButton.removeEventListener("click", () => { });
       }
     };
   }, []);
   return (
     <>
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <base href="" />
-      <meta charSet="utf-8" />
-      <title>SNAKE-SAFE. Real Science. Real Safety.</title>
-      <meta
-        httpEquiv="Accept-CH"
-        content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
-      />
-      <link
-        rel="icon"
-        type="image/x-icon"
-        href="https://assets.squarespace.com/universal/default-favicon.ico"
-      />
-      <link rel="canonical" href="https://sepia-plum-s8c9.squarespace.com" />
-      <meta
-        property="og:site_name"
-        content="SNAKE-SAFE. Real Science. Real Safety."
-      />
-      <meta
-        property="og:title"
-        content="SNAKE-SAFE. Real Science. Real Safety."
-      />
-      <meta
-        property="og:url"
-        content="https://sepia-plum-s8c9.squarespace.com"
-      />
-      <meta property="og:type" content="website" />
-      <meta itemProp="name" content="SNAKE-SAFE. Real Science. Real Safety." />
-      <meta itemProp="url" content="https://sepia-plum-s8c9.squarespace.com" />
-      <meta
-        name="twitter:title"
-        content="SNAKE-SAFE. Real Science. Real Safety."
-      />
-      <meta
-        name="twitter:url"
-        content="https://sepia-plum-s8c9.squarespace.com"
-      />
-      <meta name="twitter:card" content="summary" />
-      <meta name="description" content="" />
-      <link rel="preconnect" href="https://images.squarespace-cdn.com" />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="//assets.squarespace.com/universal/styles-compressed/user-account-core-b6e8cafbf34b05da5c2b-min.en-US.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://static1.squarespace.com/static/versioned-site-css/673652ec7d92b13c5632108e/6/5c5a519771c10ba3470d8101/673652ec7d92b13c563210ae/1588/site.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1728407958569-DI71YIND73BBQN7RBZCZ/static.css"
-      />
       <div id="siteWrapper" className="clearfix site-wrapper">
         <div id="floatingCart" className="floating-cart hidden">
           <a
@@ -347,7 +286,7 @@ content-width--wide
                                 style={{ whiteSpace: "pre-wrap" }}
                               >
                                 <strong>
-                                 {lang.subtext ?? ""}
+                                  {lang.subtext ?? ""}
                                 </strong>
                               </p>
                             </div>
@@ -1226,7 +1165,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className= {`fe-block fe-block-3f8dd36dc1a86d1c28c7 ${language == "es"? "m-top": ""}  `} >
+                      <div className={`fe-block fe-block-3f8dd36dc1a86d1c28c7 ${language == "es" ? "m-top" : ""}  `} >
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1322,7 +1261,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className={`fe-block fe-block-c706cfadb8184a37be5c ${language == "es"? "up-fifty": ""}`}>
+                      <div className={`fe-block fe-block-c706cfadb8184a37be5c ${language == "es" ? "up-fifty" : ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1333,7 +1272,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <ul data-rte-list="default">
-                                {lang.service_cards[0]?.bullets?.map(bullet=><li>
+                                {lang.service_cards[0]?.bullets?.map(bullet => <li>
                                   <p
                                     className=""
                                     style={{ whiteSpace: "pre-wrap" }}
@@ -1365,7 +1304,7 @@ content-width--wide
                                     style={{ color: "#FFFCF3" }}
                                   >
                                     <strong>
-                                    {lang.service_cards[1].service}
+                                      {lang.service_cards[1].service}
                                     </strong>
                                   </span>
                                 </a>
@@ -1400,8 +1339,8 @@ content-width--wide
                                 <div
                                   className="fluid-image-container sqs-image-content"
                                   style={{
-                                    overflow: "hidden", 
-                                    
+                                    overflow: "hidden",
+
                                     WebkitMaskImage:
                                       "-webkit-radial-gradient(white, black)",
                                     position: "relative",
@@ -1447,7 +1386,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className={`fe-block fe-block-ea40ba0b95f853f5eda2 ${language == "es"? "up-fifty": ""}`}>
+                      <div className={`fe-block fe-block-ea40ba0b95f853f5eda2 ${language == "es" ? "up-fifty" : ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1458,7 +1397,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <ul data-rte-list="default">
-                              {lang.service_cards[1]?.bullets?.map(bullet=><li>
+                                {lang.service_cards[1]?.bullets?.map(bullet => <li>
                                   <p
                                     className=""
                                     style={{ whiteSpace: "pre-wrap" }}
@@ -1473,7 +1412,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "es"? "m-top-small": ""}`}>
+                      <div className={`fe-block fe-block-cc22f5a7e2fc3e4658fd ${language == "es" ? "m-top-small" : ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1490,7 +1429,7 @@ content-width--wide
                                     style={{ color: "#FFFCF3" }}
                                   >
                                     <strong>
-                                    {lang.service_cards[2].service}
+                                      {lang.service_cards[2].service}
                                     </strong>
                                   </span>
                                 </a>
@@ -1582,7 +1521,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <ul data-rte-list="default">
-                              {lang.service_cards[2]?.bullets?.map(bullet=><li>
+                                {lang.service_cards[2]?.bullets?.map(bullet => <li>
                                   <p
                                     className=""
                                     style={{ whiteSpace: "pre-wrap" }}
@@ -1593,7 +1532,7 @@ content-width--wide
                                   </p>
                                 </li>)}
                               </ul>
-                             
+
                             </div>
                           </div>
                         </div>
@@ -1615,7 +1554,7 @@ content-width--wide
                                     style={{ color: "#FFFCF3" }}
                                   >
                                     <strong>
-                                    {lang.service_cards[3].service}
+                                      {lang.service_cards[3].service}
                                     </strong>
                                   </span>
                                 </a>
@@ -1696,7 +1635,7 @@ content-width--wide
                           </div>
                         </div>
                       </div>
-                      <div className={`fe-block fe-block-fa276e37b328d12dfc1a ${language == "es" ? "up-twenty": ""}`}>
+                      <div className={`fe-block fe-block-fa276e37b328d12dfc1a ${language == "es" ? "up-twenty" : ""}`}>
                         <div
                           className="sqs-block html-block sqs-block-html"
                           data-blend-mode="NORMAL"
@@ -1707,7 +1646,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <ul data-rte-list="default">
-                              {lang.service_cards[3]?.bullets?.map(bullet=><li>
+                                {lang.service_cards[3]?.bullets?.map(bullet => <li>
                                   <p
                                     className=""
                                     style={{ whiteSpace: "pre-wrap" }}
@@ -1990,7 +1929,7 @@ content-width--wide
             </section>
           </article>
         </main>
-        <Footer/>
+        <Footer />
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
