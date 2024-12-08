@@ -72,9 +72,9 @@ const Footer = () => {
                             whiteSpace: "pre-wrap",
                           }}
                         >
-                          <a href="mailto:drmiller@snake-safe.com">
+                          <a href={`mailto:${lang.email}`}>
                             <span className="sqsrte-text-color--black">
-                              drmiller@snake-safe.com
+                              {lang.email}
                             </span>
                           </a>
                         </h2>
