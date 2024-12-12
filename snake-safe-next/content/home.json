@@ -83,7 +83,7 @@
       }
     },
     "spanish": {
-      "heading_1": "Protegiendo a su personal e invitados",
+      "heading_1": "Protegiendo a su personal e huéspedes",
       "heading_2": "Evaluación y capacitación en gestión de riesgos por serpientes, remoción y primeros auxilios",
       "author": "Por el biólogo y científico biomédico Dr. Jonny Miller",
       "hero_img": "snake.jpg",
@@ -93,7 +93,7 @@
         "Dato: Las creencias más comunes sobre cómo tratar mordeduras de serpientes AUMENTAN el riesgo de lesiones y muerte",
         "Dato: Atacar a las serpientes puede aumentar las posibilidades de lesiones y muerte para los humanos"
       ],
-      "subtext": "Estamos comprometidos a reducir el riesgo de muerte y lesiones para el personal e invitados, ayudando a las empresas a minimizar el riesgo de mordeduras de serpientes utilizando un enfoque humano y basado en evidencia. Con nuestra experiencia combinada en ciencias ecológicas y médicas, y en gestión de riesgos, hemos diseñado programas de evaluación y capacitación en manejo de tierras, remoción de serpientes y primeros auxilios para reducir efectivamente la presencia de serpientes, disminuir el riesgo de ataque y las posibilidades de lesiones y muerte si ocurre una mordedura de serpiente.",
+      "subtext": "Estamos comprometidos a reducir el riesgo de muerte y lesiones para el personal e huéspedes, ayudando a las empresas a minimizar el riesgo de mordeduras de serpientes utilizando un enfoque humano y basado en evidencia. Con nuestra experiencia combinada en ciencias ecológicas y médicas, y en gestión de riesgos, hemos diseñado programas de evaluación y capacitación en manejo de tierras, remoción de serpientes y primeros auxilios para reducir efectivamente la presencia de serpientes, disminuir el riesgo de ataque y las posibilidades de lesiones y muerte si ocurre una mordedura de serpiente.",
       "cards": [
         {
           "title": "Escuelas",
@@ -126,7 +126,7 @@
           "service": "Evaluación de Riesgos",
           "img": "Map+images.pptx.jpg",
           "bullets": [
-            "Identificación de ubicaciones y prácticas que favorecen la entrada, refugio, caza y reproducción de serpientes.",
+            "Identificación de ubicaciones y prácticas que favorecen la entrada, refugio, caza o reproducción de serpientes.",
             "Plan de acción personalizado y específico para el sitio para reducir la presencia de serpientes y el riesgo de mordeduras en la propiedad.",
             "Construcción de planes de contingencia para emergencias por mordeduras de serpientes"
           ]
@@ -152,7 +152,7 @@
           "service": "Capacitación en Remoción y Reubicación de Serpientes",
           "img": "jonny_snake.jpg",
           "bullets": [
-            "Comprender y practicar las herramientas y técnicas para remover y reubicar serpientes de manera segura y humanitaria"
+            "Comprender y practicar las herramientas y técnicas para remover y reubicar serpientes de manera segura y humanamente"
           ]
         }
       ],
@@ -161,7 +161,7 @@
         "img": "a-team-of-surgeons-is-fighting-for-life-for-a-rea-2023-11-27-05-14-27-utc.png"
       },
       "column_2": {
-        "title": "Entrenando a los mejores...",
+        "title": "...por capacitar a sus mejores",
         "img": "group-photo.png"
       }
     }
