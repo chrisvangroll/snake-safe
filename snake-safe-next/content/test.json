@@ -1,0 +1,48 @@
+{
+  "english": {
+    "heading": "Snake-Safe Services",
+    "subText": "Get in touch today to discuss how we can provide tailored solutions for your company, staff and guests. Each Assessment or Training Module can be provided independently or in any combination that suits you.",
+    "riskAssessment": {
+      "title": "Risk Assessment",
+      "bullets": [
+        "Assessment of property, identification of locations and practices that support snake entry, refuge, hunting and reproduction.",
+        "Tailor-made, site-specific action plan to reduce snake presence and bite risk on the property.",
+        "Contingency plan building for snake bite emergencies"
+      ],
+      "img": "Map+images.pptx.jpg"
+    },
+    "trainingModules": {
+      "title": "Modules",
+      "modules": [
+        {
+          "module": "Land and Emergency Management Training",
+          "bullets": [
+            "Best practices for reducing snakes hunting and breeding on your property",
+            "Building effective systems for incidence reporting, action plans and emergency management",
+            "Minimizing incidents through information and signage to promote best practices"
+          ],
+          "img": "IMG_8324.png"
+        },
+        {
+          "module": "Snake Bite First Aid Training",
+          "bullets": [
+            "Theory: Understanding snake venom and treatment myths",
+            "Practical: How to administer first aid to a snakebite victim, protocol to get to emergency services"
+          ],
+          "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png"
+        },
+        {
+          "module": "Snake Removal and Relocation Training",
+          "bullets": [
+            "Understanding the tools and techniques to humanely and safely remove and relocate snakes"
+          ],
+          "img": "jonny_snake.jpg"
+        }
+      ]
+    }
+  },
+  "spanish": {
+    "heading": "Página de Prueba",
+    "subheading": "Esta es una página de prueba"
+  }
+} 
