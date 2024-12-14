@@ -48,3 +48,15 @@
        padding-bottom: 24px;
     }
 }
+
+@media (max-width: 767px) {
+    .fe-block-a2c7c62f9dfecdc9d3e9 {
+      grid-area: 1/6/2/10 !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-10cfe91445be32035ed9 {
+        grid-area: 12 / 20 / 14 / 26 !important;
+    }
+}

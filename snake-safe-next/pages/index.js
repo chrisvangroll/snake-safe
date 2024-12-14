@@ -155,7 +155,7 @@ content-width--wide
                               <h1 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFF6DC" }}
+                                  style={{ color: "red" }}
                                 >
                                   <strong>{lang.heading_1 ?? ""}</strong>
                                 </span>
@@ -409,16 +409,8 @@ content-width--wide
                         >
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
-                              <h4
-                                style={{
-                                  textAlign: "right",
-                                  whiteSpace: "pre-wrap",
-                                }}
-                              >
-                                <span
-                                  className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
-                                >
+                              <h4 style={{ whiteSpace: "pre-wrap" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
                                   {lang.cards[4].title}
                                 </span>
                               </h4>
@@ -436,16 +428,8 @@ content-width--wide
                         >
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
-                              <h4
-                                style={{
-                                  textAlign: "right",
-                                  whiteSpace: "pre-wrap",
-                                }}
-                              >
-                                <span
-                                  className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
-                                >
+                              <h4 style={{ whiteSpace: "pre-wrap" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
                                   {lang.cards[2].title}
                                 </span>
                               </h4>
@@ -464,10 +448,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span
-                                  className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
-                                >
+                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
                                   {lang.cards[0].title}
                                 </span>
                               </h4>
@@ -486,10 +467,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span
-                                  className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
-                                >
+                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
                                   {lang.cards[3].title}
                                 </span>
                               </h4>
@@ -507,16 +485,8 @@ content-width--wide
                         >
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
-                              <h4
-                                style={{
-                                  textAlign: "right",
-                                  whiteSpace: "pre-wrap",
-                                }}
-                              >
-                                <span
-                                  className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
-                                >
+                              <h4 style={{ whiteSpace: "pre-wrap" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
                                   {lang.cards[5].title}
                                 </span>
                               </h4>
@@ -561,23 +531,20 @@ content-width--wide
                                   <div className="content-fill">
                                     <img
                                       data-stretch="true"
-                                      // data-src="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg"
-                                      // data-image="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg"
-                                      data-image-dimensions="2500x1514"
+                                      data-image-dimensions="1528x1018"
                                       data-image-focal-point="0.5,0.5"
-                                      alt="Photo of service section"
+                                      alt="Photo of snake"
                                       data-load="false"
                                       elementtiming="system-image-block"
                                       src={lang.cards[2].img}
-                                      width={2500}
-                                      height={1514}
+                                      width={1528}
+                                      height={1018}
                                       sizes="100vw"
                                       style={{
                                         display: "block",
                                         objectFit: "cover",
                                         objectPosition: "50% 50%",
                                       }}
-                                      // srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/dc2e68a5-0978-430a-9324-0b0c13dbfa77/medicine-doctor-team-2023-11-27-05-35-55-utc.jpg?format=2500w 2500w"
                                       loading="lazy"
                                       decoding="async"
                                       data-loader="sqs"
@@ -787,7 +754,6 @@ content-width--wide
                                         objectFit: "cover",
                                         objectPosition: "50% 50%",
                                       }}
-                                      srcSet="https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/673652ec7d92b13c5632108e/7ab208a3-481f-48e2-bc39-d9c7a949d68a/young-family-with-two-kids-enjoy-summer-vacation-i-2023-11-27-05-03-52-utc.jpg?format=2500w 2500w"
                                       loading="lazy"
                                       decoding="async"
                                       data-loader="sqs"
@@ -1947,3 +1913,5 @@ content-width--wide
     </>
   );
 }
+
+
