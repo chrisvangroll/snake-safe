@@ -1,6 +1,6 @@
 {
-  "background": "gray",
-  "primary": "red",
-  "secondary": "blue",
-  "factsTextColor": "green"
+  "background": "#536878",
+  "primary": "white",
+  "secondary": "rgb(24, 34, 65)",
+  "factsTextColor": "#0000ff"
 } 

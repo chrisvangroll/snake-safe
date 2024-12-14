@@ -14,7 +14,7 @@ footer {
     }
 
     .footer-container span {
-        display: block; /* Ensure it behaves as a block element for proper margin application */
+        display: block;
         margin-bottom: 12px;
     }
 }

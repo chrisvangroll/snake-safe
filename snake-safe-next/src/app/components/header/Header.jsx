@@ -104,6 +104,44 @@ const Header = () => {
           
             
         `}</style>
+        <style>{`
+          * {
+            background-color: ${Colors.background};
+          }
+
+          .sqs-html-content p {
+              color: ${Colors.secondary}
+          }
+          .sqsrte-text-color--black {
+            color: ${Colors.secondary}
+          }
+
+          .sqsrte-text-color--black strong {
+            color: ${Colors.secondary}
+          }
+
+          .header-nav-next {
+            color: ${Colors.secondary};
+          }
+
+          .nav-links a {
+            color: ${Colors.secondary};
+          }
+
+          .current-page::after {
+            background-color: ${Colors.secondary};
+          }
+
+          @media (max-width: 767px) {
+            .nav-links {
+              color: ${Colors.secondary};
+            }
+          }
+          
+          .bar-next {
+            background-color: ${Colors.secondary};
+          }
+        `}</style>
       </Head>
       <header className="header-nav-next">
         <Link href="/" className="logo">

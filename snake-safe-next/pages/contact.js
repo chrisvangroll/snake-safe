@@ -4,6 +4,7 @@ import Content from "../content/contact.json";
 import { useSelector } from 'react-redux';
 import Footer from "@/app/components/footer/Footer";
 import '../src/styles/styles.css';
+import Head from 'next/head';
 import Colors from "../content/colors.json";
 
 const contact = () => {
@@ -17,6 +18,23 @@ const contact = () => {
 
   return (
     <>
+      <Head>
+        <style>{`
+          .contact-btn {
+            color: ${Colors.primary};
+            background: ${Colors.secondary};
+            font-size: 24px !important;
+            font-family: "manrope";
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+          }
+          
+          .contact-btn:hover {
+            color: ${Colors.secondary};
+            background: ${Colors.primary};
+          }
+        `}</style>
+      </Head>
       <div id="siteWrapper" className="clearfix site-wrapper">
         <div id="floatingCart" className="floating-cart hidden">
           <a

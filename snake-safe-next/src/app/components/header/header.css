@@ -5,7 +5,6 @@
   padding: 15px 20px;
   position: relative;
   z-index: 1000;
-  color: rgb(24, 34, 65);
   font-family: manrope;
 }
 
@@ -26,7 +25,6 @@
   right: 0;
   bottom: -3px; 
   height: 1px; 
-  background-color: #333;
   z-index: -1; 
 }
 
@@ -43,7 +41,6 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
   margin-left: 20px;
   transition: color 0.3s;
 }
@@ -67,12 +64,9 @@
     top: 60px; 
     left: 0;
     width: 100%;
-    background-color: #fff;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
-    background-color: rgb(123, 148, 156);
-    color: rgb(24, 34, 65);
     font-size: 16px;
   }
 
@@ -94,7 +88,6 @@
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #333;
     margin: 9px;
     transition: all 0.3s ease-in-out;
   }

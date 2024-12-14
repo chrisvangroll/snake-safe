@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Content from "../../../../content/headerAndFooter.json"
 import './footer.css'
+import Head from "next/head";
+import Colors from "../../../../content/colors.json";
 
 const Footer = () => {
   const { english, spanish } = Content;
@@ -16,68 +18,93 @@ const Footer = () => {
   }, [language]);
 
   return (
-    <footer className="sections" id="footer-sections" data-footer-sections="">
-      <section
-        data-test="page-section"
-        data-section-theme="light"
-        className="page-section full-bleed-section layout-engine-section background-width--full-bleed section-height--custom content-width--wide horizontal-alignment--center vertical-alignment--middle light"
-      >
-        <div className="section-border">
-          <div className="section-background"></div>
-        </div>
-        <div
-          className="content-wrapper"
-          style={{
-            paddingTop: "calc(0vmax / 10)",
-            paddingBottom: "calc(0vmax / 10)",
-          }}
-        >
-          <div className="content">
-            <div data-fluid-engine="true" className="fluid-engine-edit">
-              <div className="fluid-engine fe-67365873e079254848629f73 footer-container">
-                <div>
-                <div className="fe-block fe-block-49a0de279278179f3b2d">
-                  <div className="sqs-block html-block sqs-block-html">
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2 style={{ whiteSpace: "pre-wrap" }}>
-                          <span className="sqsrte-text-color--white">
-                            {lang.company}
-                          </span>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="fe-block fe-block-1f465ecdc1ac6e046b6d">
-                  <div className="sqs-block html-block sqs-block-html">
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <p style={{ whiteSpace: "pre-wrap" }}>
-                          <span>{lang.motto}</span> <span>{lang.author}</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
+    <>
+      <Head>
+        <style>{`
+          .sqsrte-text-color--white {
+            color: ${Colors.primary};
+          }
           
-                <div className="fe-block fe-block-bb5630c3e9b5adaff3a2">
-                  <div className="sqs-block html-block sqs-block-html">
-                    <div className="sqs-block-content">
-                      <div className="sqs-html-content">
-                        <h2
-                          style={{
-                            textAlign: "right",
-                            whiteSpace: "pre-wrap",
-                          }}
-                        >
-                          <a href={`mailto:${lang.email}`}>
-                            <span className="sqsrte-text-color--black">
-                              {lang.email}
+          .sqsrte-text-color--black {
+            color: ${Colors.secondary};
+          }
+          
+          .sqs-html-content p span {
+            color: ${Colors.secondary};
+          }
+          
+          h2 > span {
+            color: ${Colors.primary};
+          }
+          
+          a > span {
+            color: ${Colors.secondary};
+          }
+        `}</style>
+      </Head>
+      <footer className="sections" id="footer-sections" data-footer-sections="">
+        <section
+          data-test="page-section"
+          data-section-theme="light"
+          className="page-section full-bleed-section layout-engine-section background-width--full-bleed section-height--custom content-width--wide horizontal-alignment--center vertical-alignment--middle light"
+        >
+          <div className="section-border">
+            <div className="section-background"></div>
+          </div>
+          <div
+            className="content-wrapper"
+            style={{
+              paddingTop: "calc(0vmax / 10)",
+              paddingBottom: "calc(0vmax / 10)",
+            }}
+          >
+            <div className="content">
+              <div data-fluid-engine="true" className="fluid-engine-edit">
+                <div className="fluid-engine fe-67365873e079254848629f73 footer-container">
+                  <div>
+                  <div className="fe-block fe-block-49a0de279278179f3b2d">
+                    <div className="sqs-block html-block sqs-block-html">
+                      <div className="sqs-block-content">
+                        <div className="sqs-html-content">
+                          <h2 style={{ whiteSpace: "pre-wrap" }}>
+                            <span className="sqsrte-text-color--white">
+                              {lang.company}
                             </span>
-                          </a>
-                        </h2>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="fe-block fe-block-1f465ecdc1ac6e046b6d">
+                    <div className="sqs-block html-block sqs-block-html">
+                      <div className="sqs-block-content">
+                        <div className="sqs-html-content">
+                          <p style={{ whiteSpace: "pre-wrap" }}>
+                            <span>{lang.motto}</span> <span>{lang.author}</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+            
+                  <div className="fe-block fe-block-bb5630c3e9b5adaff3a2">
+                    <div className="sqs-block html-block sqs-block-html">
+                      <div className="sqs-block-content">
+                        <div className="sqs-html-content">
+                          <h2
+                            style={{
+                              textAlign: "right",
+                              whiteSpace: "pre-wrap",
+                            }}
+                          >
+                            <a href={`mailto:${lang.email}`}>
+                              <span className="sqsrte-text-color--black">
+                                {lang.email}
+                              </span>
+                            </a>
+                          </h2>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -85,9 +112,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </footer>
+        </section>
+      </footer>
+    </>
   );
 };
 

@@ -1,9 +1,10 @@
-
 'use client';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { setLanguage } from "../../store/languageSlice"
 import "./language-toggle.css";
+import Head from "next/head";
+import Colors from "../../../../content/colors.json";
 
 export default function LanguageToggle() {
   const dispatch = useDispatch();
@@ -15,16 +16,25 @@ export default function LanguageToggle() {
   };
 
   return (
-    <div className="toggle-container">
-      <select
-        value={language}
-        onChange={handleDropdownChange}
-        className="toggle-select"
-        aria-label="Select Language"
-      >
-        <option value="en">English</option>
-        <option value="es">Español</option>
-      </select>
-    </div>
+    <>
+      <Head>
+        <style>{`
+          .toggle-select {
+            color: ${Colors.secondary};
+          }
+        `}</style>
+      </Head>
+      <div className="toggle-container">
+        <select
+          value={language}
+          onChange={handleDropdownChange}
+          className="toggle-select"
+          aria-label="Select Language"
+        >
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+    </>
   );
 }
