@@ -6,6 +6,7 @@ import Content from "../../../../content/headerAndFooter.json"
 import { useSelector } from 'react-redux';
 import "./header.css";
 import Head from "next/head";
+import Colors from "../../../../content/colors.json";
 
 const Header = () => {
   const router = useRouter();
@@ -84,6 +85,25 @@ const Header = () => {
           type="text/css"
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700"
         />
+            <style>{`
+          * {
+            background-color: ${Colors.background};
+          }
+
+          .sqs-html-content p {
+              color: ${Colors.secondary}
+          }
+          .sqsrte-text-color--black {
+            color: ${Colors.secondary}
+          }
+
+           .sqsrte-text-color--black strong {
+            color: ${Colors.secondary}
+          }
+
+          
+            
+        `}</style>
       </Head>
       <header className="header-nav-next">
         <Link href="/" className="logo">

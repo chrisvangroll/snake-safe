@@ -4,6 +4,7 @@ import Content from "../content/contact.json";
 import { useSelector } from 'react-redux';
 import Footer from "@/app/components/footer/Footer";
 import '../src/styles/styles.css';
+import Colors from "../content/colors.json";
 
 const contact = () => {
   const { english, spanish } = Content;
@@ -133,7 +134,7 @@ content-width--wide
                         >
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
-                              <h1 style={{ whiteSpace: "pre-wrap" }}>{lang.heading}</h1>
+                              <h1 style={{ whiteSpace: "pre-wrap", color: Colors.secondary }}>{lang.heading}</h1>
                             </div>
                           </div>
                         </div>
@@ -152,7 +153,7 @@ content-width--wide
                                 {lang.subText}
                               </p>
                               <p className="" style={{ whiteSpace: "pre-wrap" }}>
-                                <a href="mailto:email@example.com">
+                                <a style={{ color: Colors.secondary }} href="mailto:email@example.com">
                                   {lang.email}
                                 </a>
                                 <br />

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "@/app/components/header/Header";
 import Content from "../content/services.json";
+import Colors from "../content/colors.json";
 import { useSelector } from 'react-redux';
 import Footer from "@/app/components/footer/Footer";
 import '../src/styles/styles.css';
@@ -135,7 +136,7 @@ content-width--wide
                           <h1 style={{ whiteSpace: "pre-wrap" }}>
                             <span
                               className="sqsrte-text-color--custom"
-                              style={{ color: "#FFF6DC" }}
+                              style={{ color: Colors.primary }}
                             >
                               <strong>{lang.heading}</strong>
                             </span>
@@ -182,7 +183,7 @@ content-width--wide
                           >
                             <span
                               className="sqsrte-text-color--custom"
-                              style={{ color: "#FFF6DC" }}
+                              style={{ color: Colors.primary }}
                             >
                               <strong>{lang.riskAssessment.title}</strong>
                             </span>
@@ -328,7 +329,7 @@ content-width--wide
                           >
                             <span
                               className="sqsrte-text-color--custom"
-                              style={{ color: "#FFF6DC" }}
+                              style={{ color: Colors.primary }}
                             >
                               <strong>{lang.trainingModules.title}</strong>
                             </span>
@@ -356,7 +357,7 @@ content-width--wide
                             </strong>
                             <span
                               className="sqsrte-text-color--custom"
-                              style={{ color: "#FFF6DC" }}
+                              style={{ color: Colors.primary }}
                             >
                               <strong>
                                 <em>{lang.trainingModules.modules[0].module}</em>
@@ -554,7 +555,7 @@ content-width--wide
                           >
                             <span
                               className="sqsrte-text-color--custom"
-                              style={{ color: "#FFF6DC" }}
+                              style={{ color: Colors.primary }}
                             >
                               <strong>
                                 <em>{lang.trainingModules.modules[1].module}</em>
@@ -611,7 +612,7 @@ content-width--wide
                           >
                             <span
                               className="sqsrte-text-color--custom"
-                              style={{ color: "#FFF6DC" }}
+                              style={{ color: Colors.primary }}
                             >
                               <strong>
                               {lang.trainingModules.modules[2].module}

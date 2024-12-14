@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '@/app/components/header/Header';
 import Content from "../content/about.json";
+import Colors from "../content/colors.json";
 import { useSelector } from 'react-redux';
 import Footer from "@/app/components/footer/Footer";
 import '../src/styles/styles.css';
@@ -135,7 +136,10 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h1 style={{ whiteSpace: "pre-wrap" }}>
-                                <span className="sqsrte-text-color--white">
+                                <span 
+                                  className="sqsrte-text-color--custom"
+                                  style={{ color: Colors.primary }}
+                                >
                                   {lang.heading}
                                 </span>
                               </h1>
@@ -174,7 +178,7 @@ content-width--wide
                                 </strong>
                                 &nbsp;&nbsp;
                               </p>
-                              <a href={lang.link} className="" style={{ color: "rgb(24, 34, 65)" }}>
+                              <a href={lang.link} className="" style={{ color: Colors.primary }}>
                                 &nbsp;https://www.youtube.com/user/jonnytropics
                               </a>
                             </div>

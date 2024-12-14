@@ -3,10 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
-  background-color: #fff;
   position: relative;
   z-index: 1000;
-  background-color: rgb(123, 148, 156);
   color: rgb(24, 34, 65);
   font-family: manrope;
 }

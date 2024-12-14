@@ -5,19 +5,6 @@
     }
 }
 
-.contact-btn {
-    color: white;
-    background: rgb(24, 34, 65);
-    font-size: 24px !important;
-    font-family: "manrope";
-    font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.contact-btn:hover {
-    color: rgb(24, 34, 65);
-    background: white;
-}
 
 
 @media (min-width: 768px) {
@@ -59,4 +46,12 @@
     .fe-block-10cfe91445be32035ed9 {
         grid-area: 12 / 20 / 14 / 26 !important;
     }
+}
+
+.sqs-block-html {
+  background-color: transparent;
+}
+
+.fe-block {
+    background-color: transparent;
 }

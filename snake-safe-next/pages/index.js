@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Header from "../src/app/components/header/Header";
 import Content from "../content/home.json";
+import Colors from "../content/colors.json"; // Add this import
 import { useSelector } from 'react-redux';
 import Footer from "@/app/components/footer/Footer";
 import '../src/styles/styles.css';
@@ -155,7 +156,7 @@ content-width--wide
                               <h1 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "red" }}
+                                  style={{ color: Colors.primary }}
                                 >
                                   <strong>{lang.heading_1 ?? ""}</strong>
                                 </span>
@@ -163,7 +164,7 @@ content-width--wide
                               <h2 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "#F8F2E0" }}
+                                  style={{ color: Colors.primary }}
                                 >
                                   {lang.heading_2 ?? ""}
                                 </span>
@@ -265,7 +266,7 @@ content-width--wide
                               >
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "rgb(42, 101, 194)" }}
+                                  style={{ color: Colors.factsTextColor }}
                                 >
                                   <strong>
                                     {lang.facts?.map((fact, idx) => {
@@ -390,7 +391,7 @@ content-width--wide
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
+                                  style={{ color: Colors.primary }}
                                 >
                                   {lang.cards[1].title}
                                 </span>
@@ -410,7 +411,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: Colors.primary }}>
                                   {lang.cards[4].title}
                                 </span>
                               </h4>
@@ -429,7 +430,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: Colors.primary }}>
                                   {lang.cards[2].title}
                                 </span>
                               </h4>
@@ -448,7 +449,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: Colors.primary }}>
                                   {lang.cards[0].title}
                                 </span>
                               </h4>
@@ -467,7 +468,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: Colors.primary }}>
                                   {lang.cards[3].title}
                                 </span>
                               </h4>
@@ -486,7 +487,7 @@ content-width--wide
                           <div className="sqs-block-content">
                             <div className="sqs-html-content">
                               <h4 style={{ whiteSpace: "pre-wrap" }}>
-                                <span className="sqsrte-text-color--custom" style={{ color: "#FFFCF3" }}>
+                                <span className="sqsrte-text-color--custom" style={{ color: Colors.primary }}>
                                   {lang.cards[5].title}
                                 </span>
                               </h4>
@@ -1122,7 +1123,7 @@ content-width--wide
                               <h1 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
+                                  style={{ color: Colors.primary }}
                                 >
                                   <strong>{lang.service_heading ?? ""}</strong>{" "}
                                 </span>
@@ -1145,7 +1146,7 @@ content-width--wide
                                 <a href="/services">
                                   <span
                                     className="sqsrte-text-color--custom"
-                                    style={{ color: "#FFFCF3" }}
+                                    style={{ color: Colors.primary }}
                                   >
                                     <strong>{lang.service_cards[0].service}</strong>
                                   </span>
@@ -1267,7 +1268,7 @@ content-width--wide
                                 <a href="/services">
                                   <span
                                     className="sqsrte-text-color--custom"
-                                    style={{ color: "#FFFCF3" }}
+                                    style={{ color: Colors.primary }}
                                   >
                                     <strong>
                                       {lang.service_cards[1].service}
@@ -1392,7 +1393,7 @@ content-width--wide
                                 <a href="/services">
                                   <span
                                     className="sqsrte-text-color--custom"
-                                    style={{ color: "#FFFCF3" }}
+                                    style={{ color: Colors.primary }}
                                   >
                                     <strong>
                                       {lang.service_cards[2].service}
@@ -1517,7 +1518,7 @@ content-width--wide
                                 <a href="/services">
                                   <span
                                     className="sqsrte-text-color--custom"
-                                    style={{ color: "#FFFCF3" }}
+                                    style={{ color: Colors.primary }}
                                   >
                                     <strong>
                                       {lang.service_cards[3].service}
@@ -1788,7 +1789,7 @@ content-width--wide
                               <h3 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
+                                  style={{ color: Colors.primary }}
                                 >
                                   <strong>{lang.column_1.title ?? ""}</strong>
                                 </span>
@@ -1879,7 +1880,7 @@ content-width--wide
                               <h3 style={{ whiteSpace: "pre-wrap" }}>
                                 <span
                                   className="sqsrte-text-color--custom"
-                                  style={{ color: "#FFFCF3" }}
+                                  style={{ color: Colors.primary }}
                                 >
                                   <strong>{lang.column_2.title}</strong>
                                 </span>
