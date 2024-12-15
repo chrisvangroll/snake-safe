@@ -6,11 +6,13 @@
     "email" : "drjonnymiller@gmail.com",
     "ogDescription": "Protect your staff and guests from snake bites. Workshops in: first aid for snake bites, emergency protocols, reducing snakes on property, and snake handling/removal",
     "links": {
+      "home": "Home",
       "about": "About",
       "services": "Services",
       "contact": "Contact"
     },
-    "favicon": "default-favicon.ico"
+    "favicon": "default-favicon.ico",
+    "home": "Home"
   },
   "spanish": {
     "company": "Snake-safe",
@@ -19,10 +21,12 @@
     "email" : "drjonnymiller@gmail.com",
     "ogDescription": "Aprende a manejar serpientes de manera segura y con confianza con nuestra capacitación guiada por expertos. Nuestros servicios priorizan la seguridad y técnicas prácticas para brindarte el conocimiento y las habilidades necesarias para un manejo efectivo de serpientes. Perfecto para profesionales y aficionados.",
     "links": {
-      "about": "Nosotros",
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
       "services": "Servicios",
       "contact": "Contacto"
-    }
+    },
+    "home": "Inicio"
   },
   "favicon": "default-favicon.ico"
 }

@@ -11,7 +11,7 @@ import Colors from "../../../../content/colors.json";
 const Header = () => {
   const router = useRouter();
   const currentPage = (str) =>
-    router.asPath.includes(str) ? "current-page" : "";
+    str === "" ? (router.asPath === "/" ? "current-page" : "") : router.asPath.includes(str) ? "current-page" : "";
 
   const [menuOpen, setMenuOpen] = useState(false);
   const { english, spanish } = Content;
@@ -149,6 +149,9 @@ const Header = () => {
         </Link>
         <nav className={`nav-links  ${menuOpen ? "active" : ""}`}>
           <LanguageToggle />
+          <Link className={currentPage("")} href="/">
+            {lang.links.home}
+          </Link>
           <Link className={currentPage("about")} href="/about">
             {lang.links.about}
           </Link>

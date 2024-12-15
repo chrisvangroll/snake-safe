@@ -59,3 +59,27 @@ h1, h2 {
     line-height: 1.33;
 }
 
+@media (max-width: 767px) {
+  #page h4 {
+    line-height: 1.5;
+  }
+}
+
+/* Target the specific h3 spans in the last section */
+#page section:last-of-type .fe-block-yui_3_17_2_1_1732823011610_155505 h3 span,
+#page section:last-of-type .fe-block-c685e555273ad089fd31 h3 span {
+  position: relative;
+  bottom: 8px;
+}
+
+/* Fix for services section text clipping and underlining */
+#page .fe-block h4 a {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+/* Add line height to strong elements in services section */
+#page .fe-block h4 strong {
+  line-height: 1.4;
+}
+
