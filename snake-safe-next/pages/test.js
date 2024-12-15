@@ -46,12 +46,13 @@ const Test = () => {
             font-size: 5rem;
             margin-bottom: 1.5rem;
             font-weight: 300;
+            line-height: 1.5;
           }
           .page-subtitle {
             color: ${Colors.secondary};
             font-size: 1.2rem;
             max-width: 800px;
-            line-height: 1.6;
+            line-height: 1.8;
           }
           @media (max-width: 992px) {
             .page-header {

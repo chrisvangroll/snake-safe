@@ -54,3 +54,8 @@
 .fe-block {
     background-color: transparent;
 }
+
+h1, h2 {
+    line-height: 1.33;
+}
+

@@ -93,17 +93,17 @@ const TrainingModules = ({ modules, title, riskAssessment }) => {
         <RiskAssessmentCard data={riskAssessment} />
         {modules.map((module, index) => (
           <div className="module-card" key={index}>
+            <img 
+              src={module.img} 
+              alt={module.module}
+              className="module-image"
+            />
             <h3 className="module-title">{module.module}</h3>
             <ul className="module-list">
               {module.bullets.map((bullet, idx) => (
                 <li key={idx}>{bullet}</li>
               ))}
             </ul>
-            <img 
-              src={module.img} 
-              alt={module.module}
-              className="module-image"
-            />
           </div>
         ))}
       </div>

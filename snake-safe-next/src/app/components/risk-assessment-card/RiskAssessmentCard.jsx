@@ -51,17 +51,17 @@ const RiskAssessmentCard = ({ data }) => {
           border-radius: 4px;
         }
       `}</style>
+      <img 
+        src={data.img} 
+        alt="Risk Assessment"
+        className="module-image"
+      />
       <h3 className="module-title">{data.title}</h3>
       <ul className="module-list">
         {data.bullets.map((bullet, idx) => (
           <li key={idx}>{bullet}</li>
         ))}
       </ul>
-      <img 
-        src={data.img} 
-        alt="Risk Assessment"
-        className="module-image"
-      />
     </div>
   );
 };
