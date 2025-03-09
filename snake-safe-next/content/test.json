@@ -42,7 +42,45 @@
     }
   },
   "spanish": {
-    "heading": "Página de Prueba",
-    "subheading": "Esta es una página de prueba"
+    "heading": "Servicios Snake-Safe",
+    "subText": "Póngase en contacto hoy para hablar sobre cómo podemos proporcionar soluciones a medida para su empresa, personal e invitados. Cada evaluación o módulo de formación puede proporcionarse de forma independiente o en cualquier combinación que se adapte a sus necesidades.",
+    "riskAssessment": {
+      "title": "Evaluación de Riesgos",
+      "bullets": [
+        "Evaluación de propiedades, identificación de ubicaciones y prácticas que facilitan la entrada, refugio, caza y reproducción de serpientes.",
+        "Plan de acción personalizado y específico para reducir la presencia de serpientes y el riesgo de mordeduras en la propiedad.",
+        "Elaboración de planes de contingencia para emergencias por mordeduras de serpientes"
+      ],
+      "img": "Map+images.pptx.jpg"
+    },
+    "trainingModules": {
+      "title": "Módulos",
+      "modules": [
+        {
+          "module": "Capacitación en Gestión de Terrenos y Emergencias",
+          "bullets": [
+            "Mejores prácticas para reducir la caza y reproducción de serpientes en su propiedad",
+            "Construcción de sistemas efectivos para la notificación de incidentes, planes de acción y gestión de emergencias",
+            "Minimización de incidentes a través de información y señalización para promover mejores prácticas"
+          ],
+          "img": "IMG_8324.png"
+        },
+        {
+          "module": "Capacitación en Primeros Auxilios para Mordeduras de Serpientes",
+          "bullets": [
+            "Teoría: Comprensión del veneno de serpiente y mitos sobre tratamientos",
+            "Práctica: Cómo administrar primeros auxilios a una víctima de mordedura de serpiente, protocolo para acceder a servicios de emergencia"
+          ],
+          "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png"
+        },
+        {
+          "module": "Capacitación en Remoción y Reubicación de Serpientes",
+          "bullets": [
+            "Comprensión de las herramientas y técnicas para retirar y reubicar serpientes de manera humana y segura"
+          ],
+          "img": "jonny_snake.jpg"
+        }
+      ]
+    }
   }
-} 
+}

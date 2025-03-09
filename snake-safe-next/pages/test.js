@@ -19,6 +19,8 @@ const Test = () => {
     language === "en" ? setLang(english) : setLang(spanish)
   }, [language])
 
+console.log("123")
+
   return (
     <>
       <Head>

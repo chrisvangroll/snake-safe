@@ -1,8 +1,10 @@
-import React from 'react';
 import Colors from "../../../../content/colors.json";
 import RiskAssessmentCard from '../risk-assessment-card/RiskAssessmentCard';
+import React, {useState, useEffect} from "react";
+import { useSelector } from 'react-redux';
 
 const TrainingModules = ({ modules, title, riskAssessment }) => {
+
   return (
     <div className="training-modules">
       <style jsx>{`

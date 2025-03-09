@@ -1,86 +1,86 @@
 {
-    "english": {
-        "heading": "Snake-Safe Services",
-        "subText": "Get in touch today to discuss how we can provide tailored solutions for your company, staff and guests. Each Assessment or Training Module can be provided independently or in any combination that suits you.",
-        "riskAssessment": {
-            "title": "Risk Assessment",
-            "bullets": [
-                "Assessment of property, identification of locations and practices that support snake entry, refuge, hunting and reproduction.",
-                "Tailor-made, site-specific action plan to reduce snake presence and bite risk on the property.",
-                "Contingency plan building for snake bite emergencies"
-            ],
-            "img": "Map+images.pptx.jpg"
-        },
-        "trainingModules": {
-            "title": "Training modules:",
-            "modules": [
-                {
-                    "module": "1. Land and Emergency Management Training",
-                    "bullets": [
-                        "Best practices for reducing snakes hunting and breeding on your property",
-                        "Building effective systems for incidence reporting, action plans and emergency management",
-                        "Minimizing incidents through information and signage to promote best practices"
-                    ],
-                    "img": "IMG_8324.png"
-                },
-                {
-                    "module": "2. Snake Bite First Aid Training",
-                    "bullets": [
-                        "Theory: Understanding snake venom and treatment myths",
-                        "Practical: How to administer first aid to a snakebite victim, protocol to get to emergency services"
-                    ],
-                    "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png"
-                },
-                {
-                    "module": "3. Snake Removal and Relocation Training",
-                    "bullets": [
-                        "Understanding the tools and techniques to humanely and safely remove and relocate snakes"
-                    ],
-                    "img": "jonny_snake.jpg"
-                }
-            ]
-        }
+  "english": {
+    "heading": "Snake-Safe Services",
+    "subText": "Get in touch today to discuss how we can provide tailored solutions for your company, staff and guests. Each Assessment or Training Module can be provided independently or in any combination that suits you.",
+    "riskAssessment": {
+      "title": "Risk Assessment",
+      "bullets": [
+        "Assessment of property, identification of locations and practices that support snake entry, refuge, hunting and reproduction.",
+        "Tailor-made, site-specific action plan to reduce snake presence and bite risk on the property.",
+        "Contingency plan building for snake bite emergencies"
+      ],
+      "img": "Map+images.pptx.jpg"
     },
-    "spanish": {
-        "heading": "Servicios Seguros Contra Serpientes",
-        "subText": "Póngase en contacto hoy mismo para discutir cómo podemos ofrecer soluciones personalizadas para su empresa, personal e invitados. Cada Evaluación o Módulo de Capacitación puede proporcionarse de forma independiente o en cualquier combinación que se adapte a sus necesidades.",
-        "riskAssessment": {
-            "title": "Evaluación de Riesgos",
-            "bullets": [
-                "Evaluación de la propiedad, identificación de ubicaciones y prácticas que favorecen la entrada, refugio, caza y reproducción de serpientes.",
-                "Plan de acción personalizado y específico para el sitio para reducir la presencia de serpientes y el riesgo de mordeduras en la propiedad.",
-                "Creación de planes de contingencia para emergencias por mordeduras de serpientes"
-            ],
-            "img": "Map+images.pptx.jpg"
+    "trainingModules": {
+      "title": "Modules",
+      "modules": [
+        {
+          "module": "Land and Emergency Management Training",
+          "bullets": [
+            "Best practices for reducing snakes hunting and breeding on your property",
+            "Building effective systems for incidence reporting, action plans and emergency management",
+            "Minimizing incidents through information and signage to promote best practices"
+          ],
+          "img": "IMG_8324.png"
         },
-        "trainingModules": {
-            "title": "Módulos de Capacitación:",
-            "modules": [
-                {
-                    "module": "1. Capacitación en Gestión de Terrenos y Emergencias",
-                    "bullets": [
-                        "Mejores prácticas para reducir la caza y reproducción de serpientes en su propiedad",
-                        "Creación de sistemas efectivos para informes de incidencias, planes de acción y gestión de emergencias",
-                        "Minimización de incidentes mediante información y señalización para promover las mejores prácticas"
-                    ],
-                    "img": "IMG_8324.png"
-                },
-                {
-                    "module": "2. Capacitación en Primeros Auxilios para Mordeduras de Serpientes",
-                    "bullets": [
-                        "Teoría: Entender el veneno de serpiente y los mitos sobre su tratamiento",
-                        "Práctica: Cómo administrar primeros auxilios a una víctima de mordedura de serpiente y el protocolo para llegar a los servicios de emergencia"
-                    ],
-                    "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png"
-                },
-                {
-                    "module": "3. Capacitación en Eliminación y Reubicación de Serpientes",
-                    "bullets": [
-                        "Comprensión de las herramientas y técnicas para eliminar y reubicar serpientes de manera humanitaria y segura"
-                    ],
-                    "img": "jonny_snake.jpg"
-                }
-            ]
+        {
+          "module": "Snake Bite First Aid Training",
+          "bullets": [
+            "Theory: Understanding snake venom and treatment myths",
+            "Practical: How to administer first aid to a snakebite victim, protocol to get to emergency services"
+          ],
+          "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png"
+        },
+        {
+          "module": "Snake Removal and Relocation Training",
+          "bullets": [
+            "Understanding the tools and techniques to humanely and safely remove and relocate snakes"
+          ],
+          "img": "jonny_snake.jpg"
         }
+      ]
     }
+  },
+  "spanish": {
+    "heading": "Servicios Snake-Safe",
+    "subText": "Póngase en contacto hoy para hablar sobre cómo podemos proporcionar soluciones a medida para su empresa, personal e invitados. Cada evaluación o módulo de formación puede proporcionarse de forma independiente o en cualquier combinación que se adapte a sus necesidades.",
+    "riskAssessment": {
+      "title": "Evaluación de Riesgos",
+      "bullets": [
+        "Evaluación de propiedades, identificación de ubicaciones y prácticas que facilitan la entrada, refugio, caza y reproducción de serpientes.",
+        "Plan de acción personalizado y específico para reducir la presencia de serpientes y el riesgo de mordeduras en la propiedad.",
+        "Elaboración de planes de contingencia para emergencias por mordeduras de serpientes"
+      ],
+      "img": "Map+images.pptx.jpg"
+    },
+    "trainingModules": {
+      "title": "Módulos",
+      "modules": [
+        {
+          "module": "Capacitación en Gestión de Terrenos y Emergencias",
+          "bullets": [
+            "Mejores prácticas para reducir la caza y reproducción de serpientes en su propiedad",
+            "Construcción de sistemas efectivos para la notificación de incidentes, planes de acción y gestión de emergencias",
+            "Minimización de incidentes a través de información y señalización para promover mejores prácticas"
+          ],
+          "img": "IMG_8324.png"
+        },
+        {
+          "module": "Capacitación en Primeros Auxilios para Mordeduras de Serpientes",
+          "bullets": [
+            "Teoría: Comprensión del veneno de serpiente y mitos sobre tratamientos",
+            "Práctica: Cómo administrar primeros auxilios a una víctima de mordedura de serpiente, protocolo para acceder a servicios de emergencia"
+          ],
+          "img": "first-aid-hands-and-man-medic-with-ankle-sports-i-2023-11-27-05-35-26-utc.png"
+        },
+        {
+          "module": "Capacitación en Remoción y Reubicación de Serpientes",
+          "bullets": [
+            "Comprensión de las herramientas y técnicas para retirar y reubicar serpientes de manera humana y segura"
+          ],
+          "img": "jonny_snake.jpg"
+        }
+      ]
+    }
+  }
 }
